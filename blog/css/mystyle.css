@@ -503,7 +503,7 @@ aside {
     position: absolute;
     right: 0;
     top: 0;
-    overflow: scroll;
+    overflow: auto;
     height: 900px;
   }
 
