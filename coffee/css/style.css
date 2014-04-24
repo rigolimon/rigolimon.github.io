@@ -18,3 +18,7 @@ nav {
 nav li {
 	display: inline-block;
 }
+
+nav li a {
+	padding: 1em;
+}
