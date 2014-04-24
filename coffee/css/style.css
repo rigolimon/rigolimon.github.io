@@ -440,5 +440,5 @@ nav {
 
 nav li {
 	display: inline-block;
-	color: white;
+	padding: 20px;
 }
