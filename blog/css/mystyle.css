@@ -470,6 +470,8 @@ nav li a:hover {
   overflow: hidden;
   width: 100%;
   position: relative;
+  height: 900px;
+  margin-bottom: 3em;
 }
 
 /*ASIDE*/
@@ -477,7 +479,7 @@ nav li a:hover {
 aside {
   float: left;
   width: 30%;
-  height: 900px;
+  height: 100%;
 }
 
   aside ul {
@@ -492,9 +494,6 @@ aside {
 
 /*SECTION*/
 
-.container {
-  margin-bottom: 3em;
-}
 
   section {
     float: right;
@@ -503,7 +502,7 @@ aside {
     right: 0;
     top: 0;
     overflow: auto;
-    height: 900px;
+    height: 100%;
   }
 
 
