@@ -429,23 +429,3 @@ th {
 /*HEADER*/
 
 
-
-header {
-	background: url(../images/beans.jpg) no-repeat;
-	background-size: cover;
-	height: 330px;
-	position: relative;
-}
-
-nav {
-	background: brown;
-	width: 100%;
-}
-
-nav li {
-	display: inline-block;
-}
-
-nav li a {
-	display: block;
-}
