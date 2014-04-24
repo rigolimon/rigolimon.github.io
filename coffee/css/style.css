@@ -8,12 +8,12 @@ header {
 	width: 100%;
 	background-size: cover;
 	height: 330px;
+	position: relative;
 }
 
 nav {
 	background: brown;
 	width: 100%;
-	margin-top: 200px;
 }
 
 nav li {
