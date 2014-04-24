@@ -2,4 +2,5 @@ header {
 	background: url(../images/beans.jpg) no-repeat;
 	width: 100%;
 	background-size: cover;
+	height: auto;
 }
