@@ -13,3 +13,7 @@ header {
 nav {
 	float: right;
 }
+
+nav li {
+	display: inline-block;
+}
