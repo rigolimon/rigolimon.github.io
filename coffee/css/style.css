@@ -11,11 +11,10 @@ header {
 }
 
 nav {
-	float: right;
 	background: brown;
 	width: 100%;
 }
 
 nav li {
-	display: inline-block;
+	float: right;
 }
