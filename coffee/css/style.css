@@ -9,3 +9,7 @@ header {
 	background-size: cover;
 	height: 300px;
 }
+
+nav {
+	float: right;
+}
