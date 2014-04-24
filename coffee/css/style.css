@@ -429,3 +429,14 @@ th {
 /*HEADER*/
 
 
+header {
+	background: red;
+}
+
+nav {
+	background: blue;
+}
+
+nav li {
+	display: inline-block;
+}
