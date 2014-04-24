@@ -423,3 +423,93 @@ td,
 th {
   padding: 0;
 }
+
+
+
+/*START OF MY PAGE*/
+
+/*HEADER*/
+
+
+
+header {
+  border-bottom: 5px solid black;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.bloglogo {
+  float: left;
+  margin-left: 2em;
+}
+
+nav {
+  float: right;
+  margin-top: 3.5em;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  margin-right: 1.5em;
+  text-decoration: none;
+  color: #000000;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+
+/*CONTAINER BODY*/
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/*ASIDE*/
+
+aside {
+  float: left;
+  width: 30%;
+  height: 900px;
+}
+
+  aside ul {
+    list-style-type: none;
+  }
+
+    aside li a {
+      text-decoration: none;
+      display: block;
+      padding: 0 0 2em 0;
+    }
+
+/*SECTION*/
+
+.container {
+  margin-bottom: 3em;
+}
+
+  section {
+    float: right;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: scroll;
+    height: 900px;
+  }
+
+
+/*FOOTER*/
+
+footer {
+  border-top: 0.2em solid #000000;
+}
