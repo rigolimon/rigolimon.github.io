@@ -437,10 +437,9 @@ header {
 }
 
 nav {
-	float: left;
+
 }
 
 nav li {
-	display: inline-block;
-	padding: 20px;
+	
 }
