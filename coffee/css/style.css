@@ -438,7 +438,7 @@ header {
 }
 
 nav {
-
+	float: left;
 }
 
 nav li {
