@@ -440,6 +440,7 @@ header {
 nav {
 	float: left;
 	margin-top: 200px;
+	background: #230B03;
 }
 
 nav li {
