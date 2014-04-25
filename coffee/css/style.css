@@ -435,8 +435,7 @@ header {
 }
 
 nav {
-	background: blue;
-	margin-top: 100px;
+	float: left;
 }
 
 nav li {
