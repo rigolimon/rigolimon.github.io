@@ -438,7 +438,7 @@ header {
   width: 100%;
   margin-bottom: 2em;
   position:fixed;
-  background: blue;
+  background-color: white;
   z-index: 100;
 }
 
@@ -460,7 +460,7 @@ nav li a {
   display: block;
   margin-right: 1.5em;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 nav li a:hover {
@@ -474,7 +474,6 @@ nav li a:hover {
   overflow: hidden;
   width: 100%;
   position: relative;
-  height: 900px;
   margin-bottom: 3em;
 }
 
@@ -503,8 +502,6 @@ aside {
   section {
     float: right;
     width: 70%;
-    overflow: auto;
-    height: 100%;
     padding-top: 110px;
   }
 
@@ -513,4 +510,5 @@ aside {
 
 footer {
   border-top: 0.2em solid #000000;
+  clear: both;
 }
