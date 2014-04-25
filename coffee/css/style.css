@@ -431,7 +431,7 @@ th {
 
 header {
 	
-	height: 300px;
+	height: 19em;
 	width: 100%;
 	background: url(../images/beans.jpg) no-repeat;
 	background-size: cover;
@@ -442,5 +442,5 @@ nav {
 }
 
 nav li {
-	
+	display: inline-block;
 }
