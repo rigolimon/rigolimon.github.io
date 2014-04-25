@@ -433,6 +433,7 @@ header {
 	background: url(../images/beans.jpg) no-repeat;
 	height: 600px;
 	width: 100%;
+	overflow: hidden;
 }
 
 nav {
