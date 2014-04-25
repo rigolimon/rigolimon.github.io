@@ -437,10 +437,14 @@ header {
   overflow: hidden;
   width: 100%;
   margin-bottom: 2em;
+  position:fixed;
+  background: blue;
+  z-index: 100;
 }
 
 .bloglogo {
   float: left;
+  padding-top: 10px;
 }
 
 nav {
@@ -456,7 +460,7 @@ nav li a {
   display: block;
   margin-right: 1.5em;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 nav li a:hover {
@@ -470,7 +474,7 @@ nav li a:hover {
   overflow: hidden;
   width: 100%;
   position: relative;
-  height: 800px;
+  height: 900px;
   margin-bottom: 3em;
 }
 
@@ -479,7 +483,8 @@ nav li a:hover {
 aside {
   float: left;
   width: 30%;
-  height: 100%;
+  position:fixed;
+  top:130px;
 }
 
   aside ul {
@@ -498,11 +503,9 @@ aside {
   section {
     float: right;
     width: 70%;
-    position: absolute;
-    right: 0;
-    top: 0;
     overflow: auto;
     height: 100%;
+    padding-top: 110px;
   }
 
 
