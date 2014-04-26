@@ -455,13 +455,13 @@ header {
 
 .bloglogo {
   float: left;
-
+  margin-top: 5px;
 }
 
 nav {
   float: right;
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 5pxri;
 }
 
 nav li {
