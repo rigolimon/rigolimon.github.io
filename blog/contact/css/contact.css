@@ -451,15 +451,16 @@ header {
   right: 0;
   background-color: white;
   z-index: 100;
-  height: 100px;
 }
 
 .bloglogo {
   float: left;
+
 }
 
 nav {
   float: right;
+  position: relative;
 }
 
 nav li {
