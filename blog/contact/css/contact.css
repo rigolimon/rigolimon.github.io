@@ -436,8 +436,8 @@ th {
 /*START OF MY PAGE*/
 
 body {
-  padding: 10px;
-  position: relative;
+ padding: 10px;
+ position: relative;
 }
 
 /*HEADER*/
@@ -459,7 +459,7 @@ header {
 
 nav {
   float: right;
-  margin-top: 3.5em;
+  margin-top: -55px;
 }
 
 nav li {
@@ -521,7 +521,7 @@ aside {
   section {
     float: right;
     width: 70%;
-    padding-top: 160px;
+    padding-top: 80px;
   }
 
   .contact {
@@ -537,7 +537,5 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 200;
-  background: white;
-  clear: both;
+  z-index: 100;
 }
