@@ -459,7 +459,7 @@ header {
 
 nav {
   float: right;
-  border: 1px solid black;
+  margin-top: 10px;
 }
 
 nav li {
