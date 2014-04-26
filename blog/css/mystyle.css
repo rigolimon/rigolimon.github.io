@@ -470,7 +470,7 @@ nav li a {
   display: block;
   margin-right: 1.5em;
   text-decoration: none;
-  color: #000000;
+  color: black;
 }
 
 nav li a:hover {
