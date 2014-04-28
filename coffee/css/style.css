@@ -430,11 +430,9 @@ th {
 
 
 header {
-	
 	height: 19em;
 	width: 100%;
-	background: url(../images/beans.jpg) no-repeat;
-	background-size: cover;
+	background: url('../images/beans.jpg') no-repeat;
 }
 
 nav {
