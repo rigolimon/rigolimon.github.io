@@ -524,7 +524,6 @@ aside {
     float: right;
     width: 69%;
     padding: 1%;
-    height: 100%;
     padding-top: 100px;
     padding-bottom: 60px;
     background: #fff;
@@ -537,10 +536,7 @@ footer {
   border-top: 0.2em solid #000000;
   clear: both;
   height: 60px;
-  z-index: 100;
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 0;
-  right: 0;
   background: #fff;
 }
