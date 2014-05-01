@@ -439,7 +439,7 @@ th {
 
 
 header {
-	height: 770px;
+	height: 280px;
 	width: 1024px;
 	background: url('../images/beans.jpg') no-repeat;
   background-size: 100% auto;
@@ -480,4 +480,38 @@ nav li a {
   margin-right: 28px;
   padding: 5px 0;
   font-size: 1.1em;
+}
+
+.coffee-section {
+  width: 1024px;
+  text-align: center;
+}
+
+.coffee-section ul li {
+  display: inline-block;
+  width: 340px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.coffee-section ul li:last-child {
+  margin-left: 25px;
+}
+
+/*FOOTER*/
+
+footer {
+  width: 1024px;
+  background: #230B03;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #CFBC9A;
 }
