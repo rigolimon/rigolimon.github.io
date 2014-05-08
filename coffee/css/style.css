@@ -13,8 +13,8 @@
 
 
 header {
-	height: 280px;
-	width: 1024px;
+	height: 18em;
+	width: 60em;
 	background: url('../images/beans.jpg') no-repeat;
   background-size: 100% auto;
   position: relative;
