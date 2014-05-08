@@ -70,7 +70,7 @@ nav li a {
 }
 
 .coffee-section ul li:last-child {
-  margin-left: 2em;
+  margin-right: -2em;
 }
 
 /*FOOTER*/
