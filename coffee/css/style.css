@@ -1,6 +1,8 @@
 
 
-
+body {
+  margin: 0;
+}
 
 /*CONTAIN PAGE*/
 
@@ -13,27 +15,25 @@
 
 
 header {
-	height: 18em;
-	width: 60em;
+	height: 18.5em;
+	width: 100%;
 	background: url('../images/beans.jpg') no-repeat;
   background-size: 100% auto;
   position: relative;
+  text-align: center;
 }
 
 /*BEANS CAFFE LOGO*/
-.beansimage {
-  width: 1024px;
-  text-align: center;
-}
+
 .beanslogo {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 1.2em;
 }
 
 nav {
   width: 100%;
   position: absolute;
-  top: 220px;
+  top: 13em;
   left: 0;
   right: 0;
 }
@@ -51,34 +51,35 @@ nav li a {
   display: block;
   color: #C3B08F;
   text-decoration: none;
-  margin-right: 28px;
-  padding: 5px 0;
+  margin-right: 2em;
+  padding: 0.3em 0;
   font-size: 1.1em;
 }
 
 .coffee-section {
-  width: 1024px;
+  width: 100%;
   text-align: center;
 }
 
 .coffee-section ul li {
   display: inline-block;
-  width: 340px;
-  margin-right: 50px;
-  margin-bottom: 20px;
+  width: 21.25em;
+  margin-bottom: 1.25em;
+  margin-right: 5em;
+  border: 1px solid black;
 }
 
 .coffee-section ul li:last-child {
-  margin-left: 25px;
+  margin-left: 
 }
 
 /*FOOTER*/
 
 footer {
-  width: 1024px;
+  width: 100%;
   background: #230B03;
   text-align: center;
-  padding: 20px 0;
+  padding: 1.25em 0;
   color: white;
   position: relative;
   bottom: 0;
