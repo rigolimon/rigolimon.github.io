@@ -59,7 +59,6 @@ nav li a {
 .coffee-section {
   width: 100%;
   text-align: center;
-  background: gray;
 }
 
 .coffee-section ul {
@@ -71,7 +70,6 @@ nav li a {
 .coffee-section ul li {
   display: inline-block;
   width: 21.25em;
-  border: 1px solid black;
   margin: 1em;
 }
 
