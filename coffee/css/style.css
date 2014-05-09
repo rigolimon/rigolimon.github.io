@@ -93,29 +93,7 @@ footer p {
 /*RESPONSIVE*/
 
 
-  .container {
-    width: 20em;
-    background-size: cover;
-  }
-
-  header {
-    width: 100%;
-  }
-
-  .section-coffee {
-    width: 100%;
-  }
-
-  .section-coffee ul {
-    padding: 0;
-    margin: 0;
-  }
-
-  .section-coffee ul li {
-    float: left;
-    width: 100%;
-  }
-
+  
 
 
 /*TABLET*/
