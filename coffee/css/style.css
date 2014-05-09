@@ -4,21 +4,19 @@ body {
   margin: 0;
 }
 
-/*CONTAIN PAGE*/
-
-.contain {
+.container {
   margin: 0 auto;
-  width: 60em;
+  
 }
 
 /*HEADER*/
 
 
 header {
-	height: 16.4em;
-	width: 100%;
-	background: url('../images/beans.jpg') no-repeat;
-  background-size: 100% auto;
+  height: 22em;
+  width: 100%;
+  background: url('../images/beans.jpg') no-repeat;
+  
   position: relative;
   text-align: center;
 }
@@ -92,3 +90,140 @@ footer p {
   color: #CFBC9A;
 }
 
+/*RESPONSIVE*/
+
+/*
+  .container {
+    width: 20em;
+    background-size: cover;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .section-coffee {
+    width: 100%;
+  }
+
+  .section-coffee ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-coffee ul li {
+    float: left;
+    width: 100%;
+  }*/
+
+
+
+/*TABLET*/
+
+
+@media (min-width: 768px){
+
+
+/*CONTAIN PAGE*/
+
+.container {
+  margin: 0 auto;
+ 
+}
+
+/*HEADER*/
+
+
+header {
+  height: 16.4em;
+  background-size: 100% auto;
+}
+
+/*BEANS CAFFE LOGO*/
+
+.beanslogo {
+  display: inline-block;
+  margin-top: 1.2em;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 13em;
+  left: 0;
+  right: 0;
+}
+
+nav ul {
+  background: rgb(35, 11, 3);
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  color: #C3B08F;
+  text-decoration: none;
+  margin-right: 2em;
+  padding: 0.3em 0;
+  font-size: 1.1em;
+}
+
+.coffee-section {
+  width: 100%;
+  text-align: center;
+}
+
+.coffee-section ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+.coffee-section ul li {
+  display: inline-block;
+  width: 21.25em;
+  margin: 1em;
+}
+
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  background: #230B03;
+  text-align: center;
+  padding: 1.25em 0;
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #CFBC9A;
+}
+}
+
+/*SMALL DESKTOP*/
+
+@media (min-width:992px){
+
+  header{
+    width: 50%;
+  }
+
+}
+
+
+/*LARGE DESKTOP*/
+
+@media (min-width: 1200px){
+  header{
+    width:100%;
+  }
+}
