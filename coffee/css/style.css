@@ -15,7 +15,7 @@ body {
 
 
 header {
-	height: 18.5em;
+	height: 16.4em;
 	width: 100%;
 	background: url('../images/beans.jpg') no-repeat;
   background-size: 100% auto;
@@ -59,19 +59,22 @@ nav li a {
 .coffee-section {
   width: 100%;
   text-align: center;
+  background: gray;
 }
+
+.coffee-section ul {
+  margin: 0;
+  padding: 0;
+}
+
 
 .coffee-section ul li {
   display: inline-block;
   width: 21.25em;
-  margin-bottom: 1.25em;
-  margin-right: 5em;
   border: 1px solid black;
+  margin: 1em;
 }
 
-.coffee-section ul li:last-child {
-  margin-right: -2em;
-}
 
 /*FOOTER*/
 
