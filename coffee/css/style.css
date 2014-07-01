@@ -185,7 +185,9 @@ footer p {
   font-style: italic;
   color: #CFBC9A;
 }
-}
+  }
+
+
 
 /*SMALL DESKTOP*/
 
@@ -201,7 +203,9 @@ footer p {
 /*LARGE DESKTOP*/
 
 @media (min-width: 1200px){
+
   header{
     width:100%;
   }
+  
 }
