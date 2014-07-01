@@ -540,3 +540,7 @@ footer {
   bottom: 0;
   background: #fff;
 }
+
+a#test:visited {
+  color: red;
+}
