@@ -489,6 +489,8 @@ nav li a:hover {
 .container {
   width: 100%;
   position: relative;
+  display: inline-block;
+  min-height: 100vh;
 }
 
 /*ASIDE*/
@@ -540,4 +542,5 @@ footer {
   bottom: 0;
   background: #fff;
 }
+
 
