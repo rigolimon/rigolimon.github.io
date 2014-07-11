@@ -473,9 +473,6 @@ nav li a:hover {
   text-decoration: underline;
 }
 
-nav li a:target {
-  background: red;
-}
 
 
 /*CLEARFIX*/
