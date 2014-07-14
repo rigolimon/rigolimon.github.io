@@ -1,5 +1,6 @@
 body {
 	margin: 0;
 	line-height: 1em;
-	font-family: serif, sans-serif;
+	font-family: serif, helvetica, tahoma, arial, sans-serif;
+	font-size: 100%;
 }
