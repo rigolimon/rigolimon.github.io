@@ -1,3 +1,57 @@
 body {
-	background: black;
+	background: white;
+	margin: 0;
+	padding: 0;
 }
+
+p {
+	background: yellow;
+	width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+nav ul li {
+	float: left;
+	padding: 10px 50px;
+	font-size: 1.5em;
+}
+
+nav {
+	width: 960px;
+	background: blue;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	background: green;
+	padding: 20px;
+	border: 1px solid white;
+}
+
+
+@media only screen (max-width: 320px) {
+
+
+
+li {
+	float: none;
+	display: block;
+	background: red;
+	width: 27px;
+}
+
+
+
+}
+
+
+
+
