@@ -1,4 +1,4 @@
 rigolimon.github.io
 ===================
 
-Startup Institute Blog Site(update)
+Startup Institute Blog Site(updated again)
