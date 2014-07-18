@@ -36,8 +36,42 @@
 	max-width: 70.3%;
 	margin: 0 auto;
 	position: relative;
+	background: gray;
+	padding: 40px 10px;
 }
 
+.header-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.home-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.profile-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 10px 5px;
+}
+
+.portfolio-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	background: yellow;
+}
+
+.contact-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	background: yellow;
+}
 
 /* Body get rid of margins */
 body {
@@ -92,7 +126,7 @@ nav ul li a {
   display: block;
   text-decoration: none;
   padding: 10px 10px;
-  color: #555;
+  color: white;
   font-size: 100%;
   margin-top: 10px;
 }
@@ -116,45 +150,6 @@ a:hover {
 	height: 632px;
 	margin-top: 52px;
 	position: relative;
-}
-
-/* MY PROFILE */
-
-.profile {
-	width: 100%;
-}
-
-.meet {
-	margin: 0 auto 20px auto;
-	display: block;
-	background: red;
-	color: white;
-	padding: 15px 40px;
-}
-
-.profile-content {
-	list-style: none;
-	margin: 0;
-	padding: 10px 0;
-	text-align: center;
-}
-
-.my-profile-image {
-	width: 100%;
-}
-.image {
-	width: 35%;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.intro {
-	width: 60%;
-	display: inline-block;
-	vertical-align: top;
-	text-align: left;
-	padding-left: 30px;
-	margin-top: -10px;
 }
 
 .animated-heading {
@@ -186,4 +181,43 @@ a:hover {
 	padding: 8px 0;
 	font-size: 150%;
 	color: rgb(0, 255, 0);
+}
+
+
+/* MY PROFILE */
+
+.profile {
+	width: 100%;
+	position: relative;
+	margin-top: 0.5%;
+}
+
+.meet {
+	margin: 0 auto 20px auto;
+	display: block;
+	background: red;
+	color: white;
+	padding: 15px 40px;
+}
+
+
+.my-profile-image {
+	width: 30%;
+	float: left;
+	border-radius: 100%;
+	margin-left: 4%;
+}
+
+p.my-intro {
+	float: left;
+	width: 60%;
+	position: relative;
+	margin-left: 4%;
+}
+
+
+.portfolio {
+	background: green;
+	width: 100%;
+	height: 400px;
 }
