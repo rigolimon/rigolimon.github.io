@@ -181,6 +181,7 @@ a:hover {
 	padding: 8px 0;
 	font-size: 150%;
 	color: rgb(0, 255, 0);
+	text-align: center;
 }
 
 
@@ -189,15 +190,16 @@ a:hover {
 .profile {
 	width: 100%;
 	position: relative;
-	background: gray;
+	background: url('../img/triangular.png');
 }
 
 .meet {
 	margin: 0 auto 20px auto;
 	display: block;
-	background: red;
-	color: white;
+	background: black;
+	color: green;
 	padding: 15px 40px;
+	font-size: 140%;
 }
 
 
@@ -219,4 +221,229 @@ p.my-intro {
 .portfolio {
 	background: green;
 	width: 100%;
+}
+
+@media screen (max-width: 610px;) {
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+ -moz-box-sizing: border-box; /* Mozilla Firefox */
+ 	-o-box-sizing: border-box; /* Opera */
+ 		-webkit-box-sizing: border-box; /* Chrome and Safari */
+ 			-ms-webkit-box-sizing: border-box; /* Internet Explorer */
+       			box-sizing: border-box;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { 
+	display: inline-block; 
+}
+/* start commented backslash hack */
+* html .clearfix { 
+	height: 1%; 
+}
+.clearfix { 
+	display: block; 
+}
+
+
+
+
+/* Container set at 960px in % */
+.container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	background: gray;
+	padding: 40px 10px;
+}
+
+.header-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.home-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.profile-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 114px 5px;
+}
+
+.portfolio-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contact-container {
+	max-width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Body get rid of margins */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, helvetica, tahoma, arial, serif;
+	font-size: 100%; /* Clears bug in IE */
+}
+
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 5px 20px;
+  z-index: 100;
+  zoom: 1;
+  background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+/* RIGO LIMON name */
+.my-initials {
+  float: left;
+  color: rgb(0,255,0);
+  margin: 0;
+  padding: 8px 0 8px 40px;
+  font-size: 200%;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+ float: left;
+ list-style: none;
+ display: inline;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 497px;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+  font-size: 100%;
+  margin-top: 10px;
+}
+
+a:hover {
+	border-bottom: 5px double rgb(0,255,0);
+	color: rgb(0,255,0);
+	font-weight: bold;
+}
+
+/* HOME SECTION */
+
+.home {
+	background: url('../img/rain.jpg') no-rp
+	background-size: cover;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+			-o-background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 632px;
+	margin-top: 52px;
+	position: relative;
+}
+
+.animated-heading {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 14em;
+	text-align: center;
+}
+
+.my-name {
+	color: #1B1716;
+	font-size: 320%;
+	letter-spacing: 0.1em;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.description {
+	width: 100%;
+}
+
+.description h2 {
+	background: rgb(0,0,0);
+	margin: 0 auto;
+	width: 50%;
+	letter-spacing: 0.2em;
+	padding: 8px 0;
+	font-size: 150%;
+	color: rgb(0, 255, 0);
+	text-align: center;
+}
+
+
+/* MY PROFILE */
+
+.profile {
+	width: 100%;
+	position: relative;
+	background: green;
+}
+
+.meet {
+	margin: 0 auto 20px auto;
+	display: block;
+	background: black;
+	color: green;
+	padding: 15px 40px;
+	font-size: 140%;
+}
+
+
+.my-profile-image {
+	width: 30%;
+	float: left;
+	border-radius: 100%;
+	margin-left: 4%;
+}
+
+p.my-intro {
+	float: left;
+	width: 60%;
+	position: relative;
+	margin-left: 4%;
+}
+
+
+.portfolio {
+	background: green;
+	width: 100%;
+}
 }
