@@ -35,6 +35,8 @@ input[type='text'] {
 .container {
 	width: 100%;
 	position: relative;
+	display: inline-block;
+	min-height: 100vh;
 }
 
 .logo {
@@ -55,9 +57,11 @@ input[type='text'] {
 }
 
 footer {
-	background: gray;
+	background: blue;
 	padding: 5px 0;
 	text-align: center;
-	margin-top: 54px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
