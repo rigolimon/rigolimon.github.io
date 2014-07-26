@@ -294,7 +294,7 @@ nav ul li:nth-child(1) {
 	position: relative;
 	background: green;
 	overflow: hidden;
-	padding: 80px 5px;
+	padding: 80px 5px
 }
 .contact-options {
 	text-align: center;
