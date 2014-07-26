@@ -126,29 +126,29 @@ nav ul li:nth-child(1) {
   transition: 0.25s all linear 0;
 }
 
-.link-home:hover {
+#link-home:hover, #link-home.active {
 	border-bottom: 5px solid #7BBF97;
 	color: rgb(0,255,0);
 }
 
-.link-profile:hover {
+#link-profile:hover, #link-profile.active {
 	border-bottom: 5px solid #7BBF97;
 	color: rgb(0,255,0);
 }
 
-.link-portfolio:hover {
+#link-portfolio:hover, #link-portfolio.active {
 	border-bottom: 5px solid #7BBF97;
 	color: rgb(0,255,0);
 }
 
-.link-contact:hover {
+#link-contact:hover, #link-contact.active {
 	border-bottom: 5px solid #7BBF97;
 	color: rgb(0,255,0);
 }
 
 /* HOME SECTION */
 
-.home {
+#home {
 	background: url('../img/rain.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -203,7 +203,7 @@ nav ul li:nth-child(1) {
 	padding: 80px 5px;
 }
 
-.profile {
+#profile {
 	min-height: 100vh;
 	width: 100%;
 	position: relative;
@@ -246,7 +246,7 @@ nav ul li:nth-child(1) {
 
 /* PORTFOLIO SECTION */
 
-.portfolio {
+#portfolio {
 	width: 100%;
 	position: relative;
 	background: url('../img/wild_oliva.png');
@@ -282,7 +282,7 @@ nav ul li:nth-child(1) {
 
 /* CONTACT FORM */
 
-.contact {
+#contact {
 	width: 100%;
 	position: relative;
 	background: url('../img/pixel_weave.png');
