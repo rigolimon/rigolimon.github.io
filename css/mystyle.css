@@ -149,7 +149,7 @@ nav ul li:nth-child(1) {
 /* HOME SECTION */
 
 #home {
-	background: url('../img/rain.jpg') no-repeat;
+	background: url('../img/forest.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -263,20 +263,11 @@ nav ul li:nth-child(1) {
 
 
 
-.portfolio-container > div {
-	background: white;	
-	border: 1px solid white;
-	padding: 90px 0;
-	width: 48%;
-	display: inline-block;
-	vertical-align: top;
-	margin: 8px;
-	opacity: 0.3;
-	cursor: pointer;
-}
 
-.project1:hover, .project2:hover, .project3:hover, .project4:hover {
-	opacity: 1;
+.bounce {
+   width: 48%;
+   cursor: pointer;
+   display: inline;
 }
 
 
@@ -292,20 +283,26 @@ nav ul li:nth-child(1) {
 	max-width: 70.3%;
 	margin: 0 auto;
 	position: relative;
-	background: green;
-	overflow: hidden;
 	padding: 80px 5px;
 }
 .contact-options {
 	text-align: center;
-	background: blue;
 	padding: 0;
 }
 
 .contact-options img {
-	width: 5%;
-    float: left;
+	width: 7%;
+    display: inline-block;
     vertical-align: top;
+    margin: 3%;
+    transition: 1s all ease-in-out;
+    -webkit-transition: 1s all ease-in-out;
+
+}
+
+.contact-options img:hover {
+	transform: translate(0, -12px); 
+	-webkit-transform: translate(0, -12px);
 }
 
 .contact-options li  {
@@ -319,12 +316,23 @@ nav ul li:nth-child(1) {
 
 
 #map_canvas {
-        width: 500px;
+        width: 50%;
         height: 400px;
         display: inline-block;
         vertical-align: top;
-      }
+ }
 
+.contact-method {
+	width: 48%;
+	display: inline-block;
+	margin-left: 1%;
+	padding: 5px;
+
+}
+
+.contact-method p {
+	margin: 0;
+}
 
 footer {
 	width: 100%;
