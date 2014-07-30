@@ -1,8 +1,14 @@
-$(document).ready(function() {
+$(function() {
 
 
+/* ANIMATED HEADINGS */
+$('.animated-heading').fadeIn(2500, function() {
+	$(this).animate({
+		top:"260px"
+	}, 2000);
+});
 
-	
+/* ACTIVE LINK */
 $('.top-nav a').click( function() {
 		
 	$('.top-nav a').removeClass('active');
@@ -10,6 +16,8 @@ $('.top-nav a').click( function() {
 
 });
 
+
+/* SMOOTH SCROLL */
 $('#link-home').click(function(e) {
 	e.preventDefault();
 
@@ -44,6 +52,17 @@ $('#link-contact').click(function(e) {
 	}, 'slow');
 });
 
+/* PORTFOLIO DESCRIPTIONS */
+
+$('.project1').mouseenter(function() {
+	$('.bounce').css('opacity', '1');
+	$('.test').slideToggle('slow');
+});
+
+$('.project1').mouseout(function() {
+	$('.bounce').css('opacity', '0.5');
+	$('.test').fadeOut(500);
+});
 
 
 });

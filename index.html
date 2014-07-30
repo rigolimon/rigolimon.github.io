@@ -6,6 +6,9 @@
   <link rel="stylesheet" type="text/css" href="css/mystyle.css">
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Vesper+Libre:900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/myjs.js"></script>
 </head>
@@ -29,13 +32,16 @@
 
 
 <section id="home">
+
     <div class="home-container">
+
        <div class="animated-heading">
           <h1 class="my-name">RIGO LIMON</h1>
               <div class="description">
                  <h2>Jr. FRONT END DEVELOPER</h2>
               </div>
        </div>
+
      </div>
 </section>
 
@@ -44,7 +50,7 @@
                 <button type="button" class="meet">MEET RIGO</button>
                 <img src="img/rigod.jpg" alt="meet-rigo" class="my-profile-image">
                 <div class="my-intro">
-                <p>I'm Rigo Limon, a jr. front end developer from Chicago. I have a passion for solving problems and do so through clean code. My projects are are built from the ground up using HTML5, CSS3, jQuery, AJAX and Javascript. I enjoy building websites. It is an amazing feeling creating a website from scratch and show it off to friends and family. My future plans include learning different type of APIs, Angular.js and Node.js. It's a lot on the list, but I'm truly passionate about Javascript and the capabilities it has on the front end and on the back end. I'm always motivated to keep learning more.</p>
+                <p>I'm Rigo Limon, a jr. front end developer from Chicago. I have a passion for solving problems and do so through clean code. My projects are are built from the ground up using HTML5, CSS3, jQuery, AJAX and Javascript. I enjoy building websites. It is an amazing feeling creating a website from scratch and show it off to friends and family. My future plans include learning different type of APIs, BackBone.js and Node.js. It's a lot on the list, but I'm truly passionate about Javascript and the capabilities it has on the front end and on the back end. I'm always motivated to keep learning more.</p>
 
                 <p>When I'm not coding, I'm usually looking for the latest trends on Hacker News, Quora, Stack Overflow and Reddit. I also decided it was time to pursue a new challenge and a career change to front end development; and the choice was made. I'm currently attending Startup Institute in Chicago; a career accelerator that is helping me gain new skills on front end development to better prepare me for a job.</p>
                 </div>
@@ -67,7 +73,10 @@
 
           <button type="button" class="meet contact-button">PORTFOLIO</button>
          
-             <div class="project1"> <a href="http://rigolimon.com/bouncingBall" target="_blank" title="Bouncing Ball"><img src="img/bouncingball.png" alt="bouncingball" class="bounce"></a></div>
+             <div class="project1"> <a href="http://rigolimon.com/bouncingBall" target="_blank" title="Bouncing Ball"><img src="img/bouncingball.png" alt="bouncingball" class="bounce"></a>
+
+                <p class="test">Bouncing ball game</p>
+             </div>
                 
         </div>
 </section>
@@ -77,12 +86,18 @@
           <button type="button" class="meet contact-button">CONTACT</button>
 
           
-<div id="map_canvas">
-</div><div class="contact-method">
+<div class="contact-method">
 
-<p>If you are hiring and need to get in touch with me or have any questions, feel free to use any of the contact methods below to reach out to me.</p>
+<p>If you are hiring and need to get in touch with me or have any questions or have a project in mind, feel free to use any of the contact methods below to get in touch with me.</p>
 
 
+
+<p class="contact-me">My email is limon1285 @ gmail <span class="dot">[dot]</span> com</p>
+
+
+<a href="mailto:limon1285@gmail.com"><img src="img/contact-logo.png" alt="contact" title="Emai Me" class="contact-logo"></a>
+
+</div><div id="map_canvas">
 </div>
 
 
@@ -121,7 +136,7 @@
         var map_options = {
           center: new google.maps.LatLng(41.8500300 , -87.6500500
 ),
-          zoom: 8,
+          zoom: 10,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(map_canvas, map_options);
