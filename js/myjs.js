@@ -2,7 +2,7 @@ $(function() {
 
 
 /* ANIMATED HEADINGS */
-$('.animated-heading').fadeIn(2500, function() {
+$('.animated-heading').fadeIn(2000, function() {
 	$(this).animate({
 		top:"260px"
 	}, 2000);

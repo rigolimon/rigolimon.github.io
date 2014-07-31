@@ -5,12 +5,19 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow: hidden;
+  width: 100%;
 }
 
 /*HEADER*/
-
+ p {
+  color: blue;
+ }
 
 header {
   height: 22em;
@@ -38,7 +45,6 @@ nav {
 
 nav ul {
   background: rgb(35, 11, 3);
-  text-align: center;
 }
 
 nav li {
@@ -49,19 +55,19 @@ nav li a {
   display: block;
   color: #C3B08F;
   text-decoration: none;
-  margin-right: 2em;
-  padding: 0.3em 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .coffee-section {
   width: 100%;
   text-align: center;
+  background: green;
 }
 
 .coffee-section ul {
   margin: 0;
   padding: 0;
+  width: 80%;
 }
 
 
@@ -85,9 +91,10 @@ footer {
 }
 
 footer p {
-  font-size: 0.8em;
+  font-size: 1em;
   font-style: italic;
   color: #CFBC9A;
+  color: green;
 }
 
 /*RESPONSIVE*/
@@ -148,6 +155,7 @@ nav li a {
   margin-right: 2em;
   padding: 0.3em 0;
   font-size: 1.1em;
+  background: blue;
 }
 
 .coffee-section {
@@ -197,6 +205,10 @@ footer p {
     width: 50%;
   }
 
+  nav ul li a {
+    background: green;
+  }
+
 }
 
 
@@ -207,5 +219,15 @@ footer p {
   header{
     width:100%;
   }
+
+  nav ul li a {
+    background: red;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+  }
   
 }
+

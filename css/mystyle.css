@@ -28,33 +28,6 @@
 	display: block; 
 }
 
-
-
-
-/* Container set at 960px in % */
-.container {
-	max-width: 70.3%;
-	margin: 0 auto;
-	position: relative;
-	background: gray;
-	padding: 40px 10px;
-}
-
-.header-container {
-	max-width: 70.3%;
-	margin: 0 auto;
-	position: relative;
-}
-
-.home-container {
-	max-width: 70.3%;
-	margin: 0 auto;
-	position: relative;
-}
-
-
-
-
 /* Body get rid of margins */
 body {
 	margin: 0;
@@ -62,6 +35,15 @@ body {
 	font-family: sans-serif, helvetica, tahoma, arial, serif;
 	font-size: 100%; /* Clears bug in IE */
 }
+
+
+/* Container set at 960px in % */
+
+.header-container {
+	width: 100%;
+	position: relative;
+}
+
 
 
 header {
@@ -93,16 +75,14 @@ background-image: linear-gradient(to bottom right, #696969 0%, #3F3F3F 100%);
 
 /* RIGO LIMON name */
 .my-initials {
-  float: left;
-  color: rgb(0,255,0);
-  padding-bottom: 3px;
-  font-size: 200%;
-  width: 15%;
+  width: 24%;
   height: 55px;
+  float: left;
 }
 
 nav ul {
 	margin: 0;
+	padding: 0;
 }
 
 nav ul li {
@@ -111,20 +91,21 @@ nav ul li {
  display: inline;
 }
 
-nav ul li:nth-child(1) {
-  margin-left: 340px;
-}
 
 .my-info li a {
   display: block;
   text-decoration: none;
-  padding: 10px 25px;
   color: white;
-  font-size: 90%;
-  margin-top: 10px;
+  font-size: 100%;
   -webkit-transition: 0.25s all linear 0;
   transition: 0.25s all linear 0;
   font-family: 'Vesper Libre', serif;
+  margin-top: 17px;
+  padding: 5px 15px;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 20px;
 }
 
 #link-home:hover, #link-home.active {
@@ -162,9 +143,15 @@ nav ul li:nth-child(1) {
 	min-height: 100vh;
 }
 
+.home-container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
 .animated-heading {
 	width: 100%;
-	display: block;
 	margin: 0 auto;
 	position: relative;
 	top: 10em;
@@ -176,7 +163,7 @@ nav ul li:nth-child(1) {
 	color: white;
 	font-size: 320%;
 	letter-spacing: 0.1em;
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -187,7 +174,7 @@ nav ul li:nth-child(1) {
 .description h2 {
 	background: rgb(0,0,0);
 	margin: 0 auto;
-	width: 50%;
+	width: 80%;
 	letter-spacing: 0.2em;
 	padding: 8px 0;
 	font-size: 150%;
@@ -198,18 +185,18 @@ nav ul li:nth-child(1) {
 
 /* MY PROFILE */
 
-.profile-container {
-	max-width: 70.3%;
-	margin: 0 auto;
-	position: relative;
-	padding: 80px 5px;
-}
 
 #profile {
 	min-height: 100vh;
 	width: 100%;
 	position: relative;
 	background: url('../img/pixel_weave.png');
+}
+
+.profile-container {
+	width: 100%;
+	position: relative;
+	padding: 80px 5px;
 }
 
 
@@ -221,21 +208,21 @@ nav ul li:nth-child(1) {
 	background: #F4594E;
 	color: #fff;
 	padding: 15px 40px;
-	font-size: 140%;
+	font-size: 100%;
 	letter-spacing: 0.1em;
 	border: none;
 }
 
 
 .my-profile-image {
-	width: 35%;
-	float: left;
+	width: 70%;
+	display: block;
 	border-radius: 100%;
+	margin: 0 auto;
 }
 
 .my-intro {
-	float: left;
-	width: 61%;
+	width: 100%;
 	position: relative;
 	margin-left: 4%;
 	text-align: justify;
@@ -243,7 +230,7 @@ nav ul li:nth-child(1) {
 }
 
 .my-intro p {
-	padding: 0px 3px;
+	padding: 0px 1px;
 }
 
 /* PORTFOLIO SECTION */
@@ -255,7 +242,7 @@ nav ul li:nth-child(1) {
 }
 
 .portfolio-container {
-	max-width: 70.3%;
+	width: 70.3%;
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
@@ -298,7 +285,7 @@ nav ul li:nth-child(1) {
 }
 
 .contact-container {
-	max-width: 70.3%;
+	width: 70.3%;
 	margin: 0 auto;
 	position: relative;
 	padding: 80px 5px 5px 5px;
@@ -403,5 +390,1185 @@ footer {
 
 
 
+
+/*RESPONSIVE*/
+
+
+  
+
+
+/*TABLET*/
+
+
+@media (min-width: 768px){
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+ -moz-box-sizing: border-box; /* Mozilla Firefox */
+ 	-o-box-sizing: border-box; /* Opera */
+ 		-webkit-box-sizing: border-box; /* Chrome and Safari */
+ 			-ms-webkit-box-sizing: border-box; /* Internet Explorer */
+       			box-sizing: border-box;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { 
+	display: inline-block; 
+}
+/* start commented backslash hack */
+* html .clearfix { 
+	height: 1%; 
+}
+.clearfix { 
+	display: block; 
+}
+
+
+/* Body get rid of margins */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, helvetica, tahoma, arial, serif;
+	font-size: 100%; /* Clears bug in IE */
+}
+
+.header-container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  zoom: 1;
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #696969), color-stop(1, #3F3F3F));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #696969 0%, #3F3F3F 100%);
+}
+
+/* RIGO LIMON logo */
+.my-initials {
+  float: left;
+  height: 55px;
+  padding-bottom: 3px;
+  width: 24%;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+ float: left;
+ list-style: none;
+ display: inline;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: px;
+}
+
+.my-info li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 90%;
+  margin-top: 10px;
+  -webkit-transition: 0.25s all linear 0;
+  transition: 0.25s all linear 0;
+  font-family: 'Vesper Libre', serif;
+}
+
+#link-home:hover, #link-home.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-profile:hover, #link-profile.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-portfolio:hover, #link-portfolio.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-contact:hover, #link-contact.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+/* HOME SECTION */
+
+#home {
+	background: url('../img/forest.jpg') no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+			-o-background-size: cover;
+				-ms-background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	margin-top: 21px;
+	position: relative;
+	min-height: 100vh;
+}
+
+.home-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.animated-heading {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 10em;
+	text-align: center;
+	display: none;
+}
+
+
+.my-name {
+	color: white;
+	font-size: 320%;
+	letter-spacing: 0.1em;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.description {
+	width: 100%;
+}
+
+.description h2 {
+	background: rgb(0,0,0);
+	margin: 0 auto;
+	width: 50%;
+	letter-spacing: 0.2em;
+	padding: 8px 0;
+	font-size: 150%;
+	color: rgb(0, 255, 0);
+	text-align: center;
+}
+
+
+/* MY PROFILE */
+
+.profile-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 80px 5px;
+}
+
+#profile {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	background: url('../img/pixel_weave.png');
+}
+
+
+/* MEET AND PORTFOLIO BUTTONS */
+
+.meet, .portfolio-button, .contact-button {
+	margin: 0 auto 60px auto;
+	display: block;
+	background: #F4594E;
+	color: #fff;
+	padding: 15px 40px;
+	font-size: 140%;
+	letter-spacing: 0.1em;
+	border: none;
+}
+
+
+.my-profile-image {
+	width: 35%;
+	float: left;
+	border-radius: 100%;
+}
+
+.my-intro {
+	float: left;
+	width: 61%;
+	position: relative;
+	margin-left: 4%;
+	text-align: justify;
+	font-family: 'Source Serif Pro', serif;
+}
+
+.my-intro p {
+	padding: 0px 3px;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+	width: 100%;
+	position: relative;
+	background: url('../img/wild_oliva.png');
+}
+
+.portfolio-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	padding: 80px 5px;
+}
+
+
+
+.project1 {
+	position: relative;
+	width: 48%;
+}
+
+.bounce {
+   width: 100%;
+   cursor: pointer;
+   display: inline;
+   opacity: 0.5;
+}
+
+.test {
+	background: black;
+	color: white;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 40px 0;
+	display: none;
+}
+
+
+/* CONTACT FORM */
+
+#contact {
+	width: 100%;
+	position: relative;
+	background: url('../img/pixel_weave.png');
+}
+
+.contact-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 80px 5px 5px 5px;
+}
+.contact-options {
+	text-align: center;
+	padding: 0;
+}
+
+.contact-options img {
+	width: 7%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 3%;
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+	-o-transition: 0.5s all ease-in-out;
+}
+
+.contact-options img:hover {
+	transform: translate(0, -12px); 
+	-webkit-transform: translate(0, -12px);
+	-moz-transform: translate(0, -12px);
+	-ms-transform: translate(0, -12px);
+	-o-transform: translate(0, -12px);
+}
+
+.contact-options li  {
+	list-style: none;
+	display: inline;
+}
+
+.contact-options li a {
+	text-decoration: none;
+}
+
+
+#map_canvas {
+        width: 50%;
+        height: 400px;
+        display: inline-block;
+        vertical-align: top;
+ }
+
+.contact-method {
+	width: 48%;
+	display: inline-block;
+	margin-left: 1%;
+	padding: 5px;
+	position: relative;
+}
+
+.contact-method p {
+	margin: 0;
+	font-family: 'Droid Serif', serif;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.contact-me {
+	padding-top: 20px;
+}
+
+span.dot {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.contact-logo {
+	width: 48%;
+	display: block;
+	position: absolute;
+	left: 90px;
+	top: 150px;
+	transition: 0.5 all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+	-o-transition: 0.5s all ease-in-out;
+}
+
+.contact-logo:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+
+footer {
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 80%;
+	color: #ffff;
+	border-top: 1px solid #696969;
+}
+
+  }
+
+
+
+/*SMALL DESKTOP*/
+
+@media (min-width:992px){
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+ -moz-box-sizing: border-box; /* Mozilla Firefox */
+ 	-o-box-sizing: border-box; /* Opera */
+ 		-webkit-box-sizing: border-box; /* Chrome and Safari */
+ 			-ms-webkit-box-sizing: border-box; /* Internet Explorer */
+       			box-sizing: border-box;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { 
+	display: inline-block; 
+}
+/* start commented backslash hack */
+* html .clearfix { 
+	height: 1%; 
+}
+.clearfix { 
+	display: block; 
+}
+
+
+
+/* Body get rid of margins */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, helvetica, tahoma, arial, serif;
+	font-size: 100%; /* Clears bug in IE */
+}
+
+.header-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  zoom: 1;
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #696969), color-stop(1, #3F3F3F));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #696969 0%, #3F3F3F 100%);
+}
+
+/* RIGO LIMON logo */
+.my-initials {
+  float: left;
+  height: 55px;
+  padding-bottom: 3px;
+  width: 15%;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+ float: left;
+ list-style: none;
+ display: inline;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 340px;
+}
+
+.my-info li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 90%;
+  margin-top: 10px;
+  -webkit-transition: 0.25s all linear 0;
+  transition: 0.25s all linear 0;
+  font-family: 'Vesper Libre', serif;
+}
+
+#link-home:hover, #link-home.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-profile:hover, #link-profile.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-portfolio:hover, #link-portfolio.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-contact:hover, #link-contact.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+/* HOME SECTION */
+
+#home {
+	background: url('../img/forest.jpg') no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+			-o-background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	margin-top: 21px;
+	position: relative;
+	min-height: 100vh;
+}
+
+.home-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.animated-heading {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 10em;
+	text-align: center;
+	display: none;
+}
+
+.my-name {
+	color: white;
+	font-size: 320%;
+	letter-spacing: 0.1em;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.description {
+	width: 100%;
+}
+
+.description h2 {
+	background: rgb(0,0,0);
+	margin: 0 auto;
+	width: 50%;
+	letter-spacing: 0.2em;
+	padding: 8px 0;
+	font-size: 150%;
+	color: rgb(0, 255, 0);
+	text-align: center;
+}
+
+
+/* MY PROFILE */
+
+.profile-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 80px 5px;
+}
+
+#profile {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	background: url('../img/pixel_weave.png');
+}
+
+
+/* MEET AND PORTFOLIO BUTTONS */
+
+.meet, .portfolio-button, .contact-button {
+	margin: 0 auto 60px auto;
+	display: block;
+	background: #F4594E;
+	color: #fff;
+	padding: 15px 40px;
+	font-size: 140%;
+	letter-spacing: 0.1em;
+	border: none;
+}
+
+
+.my-profile-image {
+	width: 35%;
+	float: left;
+	border-radius: 100%;
+}
+
+.my-intro {
+	float: left;
+	width: 61%;
+	position: relative;
+	margin-left: 4%;
+	text-align: justify;
+	font-family: 'Source Serif Pro', serif;
+}
+
+.my-intro p {
+	padding: 0px 3px;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+	width: 100%;
+	position: relative;
+	background: url('../img/wild_oliva.png');
+}
+
+.portfolio-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	padding: 80px 5px;
+}
+
+
+
+.project1 {
+	position: relative;
+	width: 48%;
+}
+
+.bounce {
+   width: 100%;
+   cursor: pointer;
+   display: inline;
+   opacity: 0.5;
+}
+
+.test {
+	background: black;
+	color: white;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 40px 0;
+	display: none;
+}
+
+
+/* CONTACT FORM */
+
+#contact {
+	width: 100%;
+	position: relative;
+	background: url('../img/pixel_weave.png');
+}
+
+.contact-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 80px 5px 5px 5px;
+}
+.contact-options {
+	text-align: center;
+	padding: 0;
+}
+
+.contact-options img {
+	width: 7%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 3%;
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+	-o-transition: 0.5s all ease-in-out;
+}
+
+.contact-options img:hover {
+	transform: translate(0, -12px); 
+	-webkit-transform: translate(0, -12px);
+	-moz-transform: translate(0, -12px);
+	-ms-transform: translate(0, -12px);
+	-o-transform: translate(0, -12px);
+}
+
+.contact-options li  {
+	list-style: none;
+	display: inline;
+}
+
+.contact-options li a {
+	text-decoration: none;
+}
+
+
+#map_canvas {
+        width: 50%;
+        height: 400px;
+        display: inline-block;
+        vertical-align: top;
+ }
+
+.contact-method {
+	width: 48%;
+	display: inline-block;
+	margin-left: 1%;
+	padding: 5px;
+	position: relative;
+}
+
+.contact-method p {
+	margin: 0;
+	font-family: 'Droid Serif', serif;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.contact-me {
+	padding-top: 20px;
+}
+
+span.dot {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.contact-logo {
+	width: 48%;
+	display: block;
+	position: absolute;
+	left: 90px;
+	top: 150px;
+	transition: 0.5 all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+	-o-transition: 0.5s all ease-in-out;
+}
+
+.contact-logo:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+
+footer {
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 80%;
+	color: #ffff;
+	border-top: 1px solid #696969;
+}
+ 
+}
+
+
+/*LARGE DESKTOP*/
+
+@media (min-width: 1200px){
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+ -moz-box-sizing: border-box; /* Mozilla Firefox */
+ 	-o-box-sizing: border-box; /* Opera */
+ 		-webkit-box-sizing: border-box; /* Chrome and Safari */
+ 			-ms-webkit-box-sizing: border-box; /* Internet Explorer */
+       			box-sizing: border-box;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { 
+	display: inline-block; 
+}
+/* start commented backslash hack */
+* html .clearfix { 
+	height: 1%; 
+}
+.clearfix { 
+	display: block; 
+}
+
+
+/* Body get rid of margins */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, helvetica, tahoma, arial, serif;
+	font-size: 100%; /* Clears bug in IE */
+}
+
+.header-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  zoom: 1;
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #696969), color-stop(1, #3F3F3F));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #696969 0%, #3F3F3F 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #696969 0%, #3F3F3F 100%);
+}
+
+/* RIGO LIMON logo */
+.my-initials {
+  float: left;
+  height: 55px;
+  padding-bottom: 3px;
+  width: 15%;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+ float: left;
+ list-style: none;
+ display: inline;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 340px;
+}
+
+.my-info li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 90%;
+  margin-top: 10px;
+  -webkit-transition: 0.25s all linear 0;
+  transition: 0.25s all linear 0;
+  font-family: 'Vesper Libre', serif;
+}
+
+#link-home:hover, #link-home.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-profile:hover, #link-profile.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-portfolio:hover, #link-portfolio.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-contact:hover, #link-contact.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+/* HOME SECTION */
+
+#home {
+	background: url('../img/forest.jpg') no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+			-o-background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	margin-top: 21px;
+	position: relative;
+	min-height: 100vh;
+}
+
+.home-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.animated-heading {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 10em;
+	text-align: center;
+	display: none;
+}
+
+.my-name {
+	color: white;
+	font-size: 320%;
+	letter-spacing: 0.1em;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.description {
+	width: 100%;
+}
+
+.description h2 {
+	background: rgb(0,0,0);
+	margin: 0 auto;
+	width: 50%;
+	letter-spacing: 0.2em;
+	padding: 8px 0;
+	font-size: 150%;
+	color: rgb(0, 255, 0);
+	text-align: center;
+}
+
+
+/* MY PROFILE */
+
+.profile-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 80px 5px;
+}
+
+#profile {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	background: url('../img/pixel_weave.png');
+}
+
+
+/* MEET AND PORTFOLIO BUTTONS */
+
+.meet, .portfolio-button, .contact-button {
+	margin: 0 auto 60px auto;
+	display: block;
+	background: #F4594E;
+	color: #fff;
+	padding: 15px 40px;
+	font-size: 140%;
+	letter-spacing: 0.1em;
+	border: none;
+}
+
+
+.my-profile-image {
+	width: 35%;
+	float: left;
+	border-radius: 100%;
+}
+
+.my-intro {
+	float: left;
+	width: 61%;
+	position: relative;
+	margin-left: 4%;
+	text-align: justify;
+	font-family: 'Source Serif Pro', serif;
+}
+
+.my-intro p {
+	padding: 0px 3px;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+	width: 100%;
+	position: relative;
+	background: url('../img/wild_oliva.png');
+}
+
+.portfolio-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	padding: 80px 5px;
+}
+
+
+
+.project1 {
+	position: relative;
+	width: 48%;
+}
+
+.bounce {
+   width: 100%;
+   cursor: pointer;
+   display: inline;
+   opacity: 0.5;
+}
+
+.test {
+	background: black;
+	color: white;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 40px 0;
+	display: none;
+}
+
+
+/* CONTACT FORM */
+
+#contact {
+	width: 100%;
+	position: relative;
+	background: url('../img/pixel_weave.png');
+}
+
+.contact-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 80px 5px 5px 5px;
+}
+.contact-options {
+	text-align: center;
+	padding: 0;
+}
+
+.contact-options img {
+	width: 7%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 3%;
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+	-o-transition: 0.5s all ease-in-out;
+}
+
+.contact-options img:hover {
+	transform: translate(0, -12px); 
+	-webkit-transform: translate(0, -12px);
+	-moz-transform: translate(0, -12px);
+	-ms-transform: translate(0, -12px);
+	-o-transform: translate(0, -12px);
+}
+
+.contact-options li  {
+	list-style: none;
+	display: inline;
+}
+
+.contact-options li a {
+	text-decoration: none;
+}
+
+
+#map_canvas {
+        width: 50%;
+        height: 400px;
+        display: inline-block;
+        vertical-align: top;
+ }
+
+.contact-method {
+	width: 48%;
+	display: inline-block;
+	margin-left: 1%;
+	padding: 5px;
+	position: relative;
+}
+
+.contact-method p {
+	margin: 0;
+	font-family: 'Droid Serif', serif;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.contact-me {
+	padding-top: 20px;
+}
+
+span.dot {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.contact-logo {
+	width: 48%;
+	display: block;
+	position: absolute;
+	left: 90px;
+	top: 150px;
+	transition: 0.5 all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+	-o-transition: 0.5s all ease-in-out;
+}
+
+.contact-logo:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+
+footer {
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 80%;
+	color: #ffff;
+	border-top: 1px solid #696969;
+}
+  
+}
 
 
