@@ -75,58 +75,25 @@ background-image: linear-gradient(to bottom right, #696969 0%, #3F3F3F 100%);
 
 /* RIGO LIMON name */
 .my-initials {
-  width: 24%;
+  width: 70%;
   height: 55px;
-  float: left;
+  display: block;
+  margin: 0 auto;
 }
 
-nav ul {
-	margin: 0;
-	padding: 0;
+nav {
+	display: none;
 }
 
 nav ul li {
- float: left;
- list-style: none;
- display: inline;
+ display: none;
 }
 
 
 .my-info li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-size: 100%;
-  -webkit-transition: 0.25s all linear 0;
-  transition: 0.25s all linear 0;
-  font-family: 'Vesper Libre', serif;
-  margin-top: 17px;
-  padding: 5px 15px;
+  display: none;
 }
 
-nav ul li:nth-child(1) {
-  margin-left: 20px;
-}
-
-#link-home:hover, #link-home.active {
-	border-bottom: 5px solid #7BBF97;
-	color: rgb(0,255,0);
-}
-
-#link-profile:hover, #link-profile.active {
-	border-bottom: 5px solid #7BBF97;
-	color: rgb(0,255,0);
-}
-
-#link-portfolio:hover, #link-portfolio.active {
-	border-bottom: 5px solid #7BBF97;
-	color: rgb(0,255,0);
-}
-
-#link-contact:hover, #link-contact.active {
-	border-bottom: 5px solid #7BBF97;
-	color: rgb(0,255,0);
-}
 
 /* HOME SECTION */
 
@@ -196,7 +163,7 @@ nav ul li:nth-child(1) {
 .profile-container {
 	width: 100%;
 	position: relative;
-	padding: 80px 5px;
+	padding: 20px 10px;
 }
 
 
@@ -230,7 +197,7 @@ nav ul li:nth-child(1) {
 }
 
 .my-intro p {
-	padding: 0px 1px;
+	padding: 0px 3px;
 }
 
 /* PORTFOLIO SECTION */
