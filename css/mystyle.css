@@ -298,16 +298,39 @@ nav ul li:nth-child(1) {
 	position: relative;
 	padding: 20px 10px;
 }
-.contact-options {
+
+.contact-method {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.contact-method p {
+	font-family: 'Droid Serif', serif;
+	display: block;
 	text-align: justify;
+	width: 100%;
+}
+
+.contact-me {
+	padding-top: 10px;
+}
+
+span.dot {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.contact-options {
+	text-align: center;
 	padding: 0;
 }
 
 .contact-options img {
-	width: 7%;
+	width: 20%;
     display: inline-block;
     vertical-align: top;
-    margin: 3%;
+    margin: 4%;
     transition: 0.5s all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;
     -moz-transition: 0.5s all ease-in-out;
@@ -333,41 +356,15 @@ nav ul li:nth-child(1) {
 }
 
 
-#map_canvas {
-        width: 75%;
-        height: 400px;
-        display: block;
-        margin: 0 auto;
- }
-
-.contact-method {
-	width: 100%;
+.contact-em {
 	display: block;
-	position: relative;
-}
-
-.contact-method p {
-	font-family: 'Droid Serif', serif;
-	display: block;
-	text-align: justify;
-	width: 100%;
-}
-
-.contact-me {
-	padding-top: 10px;
-}
-
-span.dot {
-	font-weight: bold;
-	font-style: italic;
 }
 
 .contact-logo {
 	width: 48%;
 	display: block;
 	position: relative;
-	left: 26%;
-	margin-bottom: 20px;
+	margin: 0 auto 25px;
 	transition: 0.5 all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;
     -moz-transition: 0.5s all ease-in-out;
@@ -383,9 +380,16 @@ span.dot {
 	-o-transform: rotate(360deg);
 }
 
+#map_canvas {
+        width: 75%;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+ }
+
 footer {
 	width: 100%;
-	padding: 20px 0;
+	padding: 5px 0;
 	text-align: center;
 	font-size: 80%;
 	color: #ffff;
