@@ -36,6 +36,10 @@ body {
 	font-size: 100%; /* Clears bug in IE */
 }
 
+.content-container {
+	width: 100%;
+	position: relative;
+}
 
 /* Container set at 960px in % */
 
@@ -81,17 +85,51 @@ background-image: linear-gradient(to bottom right, #696969 0%, #3F3F3F 100%);
   margin: 0 auto;
 }
 
-nav {
-	display: none;
+
+nav ul {
+	margin: 0;
 }
 
 nav ul li {
- display: none;
+ float: left;
+ list-style: none;
+ display: inline;
 }
 
+nav ul li:nth-child(1) {
+  margin-left: 1px;
+}
 
 .my-info li a {
   display: none;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 90%;
+  margin-top: 10px;
+  -webkit-transition: 0.25s all linear 0;
+  transition: 0.25s all linear 0;
+  font-family: 'Vesper Libre', serif;
+}
+
+#link-home:hover, #link-home.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-profile:hover, #link-profile.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-portfolio:hover, #link-portfolio.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
+}
+
+#link-contact:hover, #link-contact.active {
+	border-bottom: 5px solid #7BBF97;
+	color: rgb(0,255,0);
 }
 
 
@@ -107,6 +145,8 @@ nav ul li {
 	width: 100%;
 	margin-top: 21px;
 	position: relative;
+	left: 0;
+	right: 0;
 	min-height: 100vh;
 }
 
@@ -114,6 +154,8 @@ nav ul li {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
+	right: 0;
+	left: 0;
 }
 
 
@@ -154,7 +196,6 @@ nav ul li {
 
 
 #profile {
-	min-height: 100vh;
 	width: 100%;
 	position: relative;
 	background: url('../img/pixel_weave.png');
@@ -191,7 +232,6 @@ nav ul li {
 .my-intro {
 	width: 100%;
 	position: relative;
-	margin-left: 4%;
 	text-align: justify;
 	font-family: 'Source Serif Pro', serif;
 }
@@ -209,24 +249,25 @@ nav ul li {
 }
 
 .portfolio-container {
-	width: 70.3%;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	padding: 80px 5px;
+	padding: 20px 10px;
 }
 
 
 
 .project1 {
 	position: relative;
-	width: 48%;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .bounce {
    width: 100%;
    cursor: pointer;
-   display: inline;
+   display: block;
    opacity: 0.5;
 }
 
@@ -238,7 +279,7 @@ nav ul li {
 	text-align: center;
 	position: absolute;
 	bottom: 0;
-	padding: 40px 0;
+	padding: 4px 0;
 	display: none;
 }
 
@@ -252,13 +293,13 @@ nav ul li {
 }
 
 .contact-container {
-	width: 70.3%;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	padding: 80px 5px 5px 5px;
+	padding: 20px 10px;
 }
 .contact-options {
-	text-align: center;
+	text-align: justify;
 	padding: 0;
 }
 
@@ -293,29 +334,27 @@ nav ul li {
 
 
 #map_canvas {
-        width: 50%;
+        width: 75%;
         height: 400px;
-        display: inline-block;
-        vertical-align: top;
+        display: block;
+        margin: 0 auto;
  }
 
 .contact-method {
-	width: 48%;
-	display: inline-block;
-	margin-left: 1%;
-	padding: 5px;
+	width: 100%;
+	display: block;
 	position: relative;
 }
 
 .contact-method p {
-	margin: 0;
 	font-family: 'Droid Serif', serif;
-	padding-right: 50px;
+	display: block;
 	text-align: justify;
+	width: 100%;
 }
 
 .contact-me {
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 span.dot {
@@ -326,9 +365,9 @@ span.dot {
 .contact-logo {
 	width: 48%;
 	display: block;
-	position: absolute;
-	left: 90px;
-	top: 150px;
+	position: relative;
+	left: 26%;
+	margin-bottom: 20px;
 	transition: 0.5 all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;
     -moz-transition: 0.5s all ease-in-out;
@@ -357,7 +396,6 @@ footer {
 
 
 
-
 /*RESPONSIVE*/
 
 
@@ -367,7 +405,7 @@ footer {
 /*TABLET*/
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -459,7 +497,7 @@ nav ul li {
 }
 
 nav ul li:nth-child(1) {
-  margin-left: px;
+  margin-left: 1px;
 }
 
 .my-info li a {
