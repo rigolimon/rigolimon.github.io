@@ -706,7 +706,7 @@ nav ul li:nth-child(1) {
 }
 
 .contact-options img {
-	width: 7%;
+	width: 5%;
     display: inline-block;
     vertical-align: top;
     margin: 3%;
@@ -767,7 +767,7 @@ span.dot {
 }
 
 .contact-logo {
-	width: 48%;
+	width: 33%;
 	display: block;
 	position: absolute;
 	left: 90px;

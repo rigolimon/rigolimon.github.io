@@ -52,8 +52,36 @@ $('#link-contact').click(function(e) {
 	}, 'slow');
 });
 
-/* PORTFOLIO DESCRIPTIONS */
 
+/* ACTIVE LINKS ON SCROLL */
+$(window).scroll(function() {
+  var scrollTop = $(window).scrollTop();
+
+   if (scrollTop < $('#profile').offset().top ) { 
+  	$('.top-nav a').removeClass('active');
+	$('#link-home').addClass('active');
+  }
+
+   if ( scrollTop > $('#profile').offset().top &&
+       scrollTop < $('#portfolio').offset().top ) { 
+  	$('.top-nav a').removeClass('active');
+	$('#link-profile').addClass('active');
+  }
+
+  if ( scrollTop > $('#portfolio').offset().top &&
+       scrollTop < $('#contact').offset().top ) { 
+  	$('.top-nav a').removeClass('active');
+	$('#link-portfolio').addClass('active');
+  }
+
+  if ( scrollTop > $('#contact').offset().top ) { 
+  	$('.top-nav a').removeClass('active');
+	$('#link-contact').addClass('active');
+  }
+});
+
+
+/* PORTFOLIO DESCRIPTIONS */
 $('.project1').mouseenter(function() {
 	$('.bounce').css('opacity', '1');
 	$('.test').slideToggle('slow');
