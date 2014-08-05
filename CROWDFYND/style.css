@@ -20,7 +20,7 @@ nav {
 
 input[type='text'] {
 	border-radius: 10px;
-	padding: 5px;
+	padding: 6px;
 	float: left;
 	width: 55%;
 	border: 1px solid black;
@@ -29,13 +29,13 @@ input[type='text'] {
 }
 
 input[type='text']:focus {
-	border: 1px solid gray;
+	background: gray;
+	color: white;
 	border-radius: 10px;
 }
 
 input[type="text"] {
 	border-radius: 10px;
-	border: 1px solid yellow;
 }
 
 .search {
