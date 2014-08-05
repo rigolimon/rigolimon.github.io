@@ -96,7 +96,7 @@ background-image: linear-gradient(to top, #7A7A7A 0%, #000000 100%);
 }
 
 .link {
-	width: 60%;
+	width: 100%;
 	position: absolute;
 	top: 60px;
 }
@@ -106,8 +106,24 @@ background-image: linear-gradient(to top, #7A7A7A 0%, #000000 100%);
 	display: inline-block;
 	font-size: 1.2em;
 	padding-left: 10px;
+	margin-left: 20px;
 }
 
+.home-button {
+	width: 10%;
+}
+
+.lost-button {
+	text-decoration: none;
+	color: white;
+}
+
+.home {
+	position: absolute;
+	top: 60px;
+	display: block;
+	margin-bottom: 30px;
+}
 
 
 .logo {
@@ -121,9 +137,10 @@ background-image: linear-gradient(to top, #7A7A7A 0%, #000000 100%);
 
 .lost-item, .found-item {
 	display: block;
+	color: white;
 	width: 80%;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	padding: 20px 0;
 	border: none;
 	border-bottom: 2px solid black;
@@ -168,6 +185,7 @@ footer {
 .venues {
 	font-size: 2em;
 	width: 90%;
+	clear: both;
 	margin: 0 auto;
 	text-align: center;
 	padding: 15px 0;
