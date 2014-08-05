@@ -128,11 +128,33 @@ background-image: linear-gradient(to top, #7A7A7A 0%, #000000 100%);
 
 .logo {
 	width: 80%;
-	background: gray;
 	height: 40vh;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	border-radius: 100%;
+	font-family: 'Lobster', cursive;
+	line-height: 40vh;
+	text-align: center;
+	font-size: 3em;
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #F0F6FA 0%, #737575 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #F0F6FA 0%, #737575 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #F0F6FA 0%, #737575 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #F0F6FA), color-stop(1, #737575));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #F0F6FA 0%, #737575 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #F0F6FA 0%, #737575 100%);
 }
 
 .lost-item, .found-item {
@@ -143,7 +165,7 @@ background-image: linear-gradient(to top, #7A7A7A 0%, #000000 100%);
 	margin-bottom: 40px;
 	padding: 20px 0;
 	border: none;
-	border-bottom: 2px solid black;
+	border-bottom: 5px solid black;
 	/* IE10 Consumer Preview */ 
 background-image: -ms-linear-gradient(bottom, #7A7A7A 0%, #000000 100%);
 
@@ -165,6 +187,23 @@ background-image: linear-gradient(to top, #7A7A7A 0%, #000000 100%);
 
 .lost-item:active, .found-item:active {
 	border-bottom: none;
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #7A7A7A 0%, #000000 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #7A7A7A 0%, #000000 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #7A7A7A 0%, #000000 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7A7A7A), color-stop(1, #000000));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #7A7A7A 0%, #000000 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #7A7A7A 0%, #000000 100%);
 }
 
 footer {
@@ -236,12 +275,13 @@ background-image: linear-gradient(to top, #7A7A7A 0%, #000000 100%);
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
+	display: none;
 }
 
 .options > div {
 	width: 44%;
 	display: inline-block;
-	border-bottom: 3px solid black;
+	border-bottom: 5px solid black;
 	padding: 40px 0;
 	margin: 6px;
 	border-radius: 5px;
