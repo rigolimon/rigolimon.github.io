@@ -4,7 +4,7 @@ $(function() {
 /* ANIMATED HEADINGS */
 $('.animated-heading').fadeIn(2000, function() {
 	$(this).animate({
-		top:"260px"
+		top:"280px"
 	}, 2000);
 });
 
@@ -55,6 +55,7 @@ $('#link-contact').click(function(e) {
 
 /* ACTIVE LINKS ON SCROLL */
 $(window).scroll(function() {
+	
   var scrollTop = $(window).scrollTop();
 
    if (scrollTop < $('#profile').offset().top ) { 
@@ -78,6 +79,7 @@ $(window).scroll(function() {
   	$('.top-nav a').removeClass('active');
 	$('#link-contact').addClass('active');
   }
+
 });
 
 

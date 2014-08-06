@@ -136,7 +136,7 @@ nav ul li:nth-child(1) {
 /* HOME SECTION */
 
 #home {
-	background: url('../img/forest.jpg') no-repeat;
+	background: url('../img/road.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -539,7 +539,7 @@ nav ul li:nth-child(1) {
 /* HOME SECTION */
 
 #home {
-	background: url('../img/forest.jpg') no-repeat;
+	background: url('../img/road.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -933,7 +933,7 @@ nav ul li:nth-child(1) {
 /* HOME SECTION */
 
 #home {
-	background: url('../img/forest.jpg') no-repeat;
+	background: url('../img/road.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -1285,7 +1285,7 @@ nav ul li {
 }
 
 nav ul li:nth-child(1) {
-  margin-left: 340px;
+  margin-left: 320px;
 }
 
 .my-info li a {
@@ -1293,11 +1293,10 @@ nav ul li:nth-child(1) {
   text-decoration: none;
   padding: 10px 25px;
   color: white;
-  font-size: 90%;
+  font-size: 100%;
   margin-top: 10px;
   -webkit-transition: 0.25s all linear 0;
   transition: 0.25s all linear 0;
-  font-family: 'Vesper Libre', serif;
 }
 
 #link-home:hover, #link-home.active {
@@ -1323,7 +1322,7 @@ nav ul li:nth-child(1) {
 /* HOME SECTION */
 
 #home {
-	background: url('../img/forest.jpg') no-repeat;
+	background: url('../img/road.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -1332,7 +1331,7 @@ nav ul li:nth-child(1) {
 	width: 100%;
 	margin-top: 21px;
 	position: relative;
-	min-height: 100vh;
+	height: 100vh;
 }
 
 .home-container {
@@ -1364,7 +1363,7 @@ nav ul li:nth-child(1) {
 }
 
 .description h2 {
-	background: rgb(0,0,0);
+	background: #565656;
 	margin: 0 auto;
 	width: 50%;
 	letter-spacing: 0.2em;
@@ -1376,14 +1375,6 @@ nav ul li:nth-child(1) {
 
 
 /* MY PROFILE */
-
-.profile-container {
-	width: 70.3%;
-	margin: 0 auto;
-	position: relative;
-	padding: 80px 5px;
-}
-
 #profile {
 	min-height: 100vh;
 	width: 100%;
@@ -1392,17 +1383,24 @@ nav ul li:nth-child(1) {
 }
 
 
+.profile-container {
+	width: 70.3%;
+	margin: 0 auto;
+	position: relative;
+	padding: 80px 5px;
+}
+
 /* MEET AND PORTFOLIO BUTTONS */
 
 .meet, .portfolio-button, .contact-button {
 	margin: 0 auto 60px auto;
-	display: block;
-	background: #F4594E;
-	color: #fff;
+	background: #565656;
+	color: #00FF00;
 	padding: 15px 40px;
 	font-size: 140%;
 	letter-spacing: 0.1em;
-	border: none;
+	text-align: center;
+	width: 30%;
 }
 
 
@@ -1423,6 +1421,8 @@ nav ul li:nth-child(1) {
 
 .my-intro p {
 	padding: 0px 3px;
+	line-height: 1.5em;
+	font-size: 110%;
 }
 
 /* PORTFOLIO SECTION */
@@ -1431,6 +1431,7 @@ nav ul li:nth-child(1) {
 	width: 100%;
 	position: relative;
 	background: url('../img/wild_oliva.png');
+	height: 100vh;
 }
 
 .portfolio-container {
@@ -1474,6 +1475,7 @@ nav ul li:nth-child(1) {
 	width: 100%;
 	position: relative;
 	background: url('../img/pixel_weave.png');
+	height: 100vh;
 }
 
 .contact-container {
