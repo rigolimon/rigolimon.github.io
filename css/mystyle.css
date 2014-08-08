@@ -1193,7 +1193,7 @@ footer {
 
 /*LARGE DESKTOP*/
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -1299,7 +1299,7 @@ nav ul li:nth-child(1) {
   transition: 0.25s all linear 0;
 }
 
-#link-home:hover, #link-home.active {
+#link-home:hover, #link-home.active{
 	border-bottom: 5px solid #7BBF97;
 	color: rgb(0,255,0);
 }
@@ -1399,6 +1399,7 @@ nav ul li:nth-child(1) {
 	letter-spacing: 0.1em;
 	text-align: center;
 	width: 30%;
+	margin-bottom: 20px;
 }
 
 
@@ -1444,16 +1445,44 @@ nav ul li:nth-child(1) {
 .project1 {
 	position: relative;
 	width: 48%;
+	display: inline-block;
+}
+
+.project2 {
+	position: relative;
+	width: 48%;
+	display: inline-block;
 }
 
 .bounce {
    width: 100%;
    cursor: pointer;
-   display: inline;
+   display: inline-block;
    opacity: 0.5;
+   height: 300px;
+}
+
+.fizz {
+	width: 100%;
+	cursor: pointer;
+	display: inline-block;
+	opacity: 0.5;
+	height: 300px;
 }
 
 .test {
+	background: black;
+	color: white;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 40px 0;
+	display: none;
+}
+
+.buzz {
 	background: black;
 	color: white;
 	width: 100%;

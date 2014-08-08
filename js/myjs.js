@@ -55,7 +55,7 @@ $('#link-contact').click(function(e) {
 
 /* ACTIVE LINKS ON SCROLL */
 $(window).scroll(function() {
-	
+
   var scrollTop = $(window).scrollTop();
 
    if (scrollTop < $('#profile').offset().top ) { 
@@ -63,8 +63,8 @@ $(window).scroll(function() {
 	$('#link-home').addClass('active');
   }
 
-   if ( scrollTop > $('#profile').offset().top &&
-       scrollTop < $('#portfolio').offset().top ) { 
+   if ( scrollTop > $('#profile').offset().top && 
+   		scrollTop < $('#portfolio').offset().top ) { 
   	$('.top-nav a').removeClass('active');
 	$('#link-profile').addClass('active');
   }
@@ -94,6 +94,15 @@ $('.project1').mouseout(function() {
 	$('.test').fadeOut(500);
 });
 
+$('.project2').mouseenter(function() {
+	$('.fizz').css('opacity', '1');
+	$('.buzz').slideToggle('slow');
+});
+
+$('.project2').mouseout(function() {
+	$('.fizz').css('opacity', '0.5');
+	$('.buzz').fadeOut(500);
+});
 
 });
 
