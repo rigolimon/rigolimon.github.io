@@ -1435,14 +1435,15 @@ nav ul li:nth-child(1) {
 
 
 .my-profile-image {
-	width: 35%;
+	width: 39%;
 	float: left;
+	height: 350px;
 	border-radius: 100%;
 }
 
 .my-intro {
 	float: left;
-	width: 61%;
+	width: 55%;
 	position: relative;
 	margin-left: 4%;
 	text-align: justify;
