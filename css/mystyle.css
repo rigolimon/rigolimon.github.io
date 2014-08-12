@@ -283,6 +283,33 @@ nav ul li:nth-child(1) {
 	display: none;
 }
 
+.project2 {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+}
+
+
+.fizz {
+	width: 100%;
+	cursor: pointer;
+	display: inline-block;
+	opacity: 0.5;
+	height: 300px;
+}
+
+.buzz {
+	background: black;
+	color: white;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 40px 0;
+	display: none;
+}
+
 
 /* CONTACT FORM */
 
@@ -1449,11 +1476,6 @@ nav ul li:nth-child(1) {
 	display: inline-block;
 }
 
-.project2 {
-	position: relative;
-	width: 48%;
-	display: inline-block;
-}
 
 .bounce {
    width: 100%;
@@ -1463,6 +1485,13 @@ nav ul li:nth-child(1) {
    height: 300px;
 }
 
+.project2 {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+}
+
+
 .fizz {
 	width: 100%;
 	cursor: pointer;
@@ -1470,6 +1499,8 @@ nav ul li:nth-child(1) {
 	opacity: 0.5;
 	height: 300px;
 }
+
+
 
 .test {
 	background: black;
