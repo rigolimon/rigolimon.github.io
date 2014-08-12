@@ -137,7 +137,7 @@ nav ul li:nth-child(1) {
 
 #home {
 	background: url('../img/road.jpg') no-repeat;
-	background-size: cover;
+	background-size: contain;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
 			-o-background-size: cover;
@@ -181,7 +181,7 @@ nav ul li:nth-child(1) {
 }
 
 .description h2 {
-	background: rgb(0,0,0);
+	background: #565656;
 	margin: 0 auto;
 	width: 80%;
 	letter-spacing: 0.2em;
