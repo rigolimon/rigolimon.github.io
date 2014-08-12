@@ -257,7 +257,7 @@ nav ul li:nth-child(1) {
 }
 
 
-
+/*BOUNCING BALL*/
 .project1 {
 	position: relative;
 	width: 100%;
@@ -283,9 +283,11 @@ nav ul li:nth-child(1) {
 	display: none;
 }
 
+
+/*FIZZ BUZZ GAME*/
 .project2 {
 	position: relative;
-	width: 48%;
+	width: 100%;
 	display: inline-block;
 }
 
