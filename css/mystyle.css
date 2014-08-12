@@ -213,12 +213,13 @@ nav ul li:nth-child(1) {
 .meet, .portfolio-button, .contact-button {
 	margin: 0 auto 60px auto;
 	display: block;
-	background: #F4594E;
-	color: #fff;
+	background: #565656;
+	color: #00FF00;
 	padding: 15px 40px;
 	font-size: 100%;
 	letter-spacing: 0.1em;
 	border: none;
+	text-align: center;
 }
 
 
