@@ -1352,7 +1352,7 @@ nav ul li:nth-child(1) {
 /* HOME SECTION */
 
 #home {
-	background: url('../img/road.png') no-repeat;
+	background: url('../img/road.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
