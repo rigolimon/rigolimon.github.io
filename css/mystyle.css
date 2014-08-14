@@ -241,6 +241,17 @@ nav ul li:nth-child(1) {
 	padding: 0px 3px;
 }
 
+.resume {
+	text-decoration: none; 
+	text-align: center;
+	display: block;
+	color: green;
+}
+
+.resume:hover {
+	text-decoration: underline;
+}
+
 /* PORTFOLIO SECTION */
 
 #portfolio {
@@ -1450,10 +1461,23 @@ nav ul li:nth-child(1) {
 	font-family: 'Source Serif Pro', serif;
 }
 
+
+
 .my-intro p {
 	padding: 0px 3px;
 	line-height: 1.5em;
 	font-size: 110%;
+}
+
+.resume {
+	text-decoration: none; 
+	text-align: center;
+	display: block;
+	color: green;
+}
+
+.resume:hover {
+	text-decoration: underline;
 }
 
 /* PORTFOLIO SECTION */
