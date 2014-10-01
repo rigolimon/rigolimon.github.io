@@ -175,7 +175,7 @@ h1, .top-menu li {
 }
 
 /* hotels, flights and cars tabs */
-.select-hotels, .select-flights, .select-cars {
+.select-flights, .select-hotels, .select-cars {
     padding: 14px 25px;
     display: block;
     width: 100%;
@@ -191,13 +191,6 @@ h1, .top-menu li {
     background-size: 20px;
 }
 
-.select-flights:hover {
-    color: #fff;
-    cursor: pointer;
-    background: #FF9955 url(../img/flights.png) 1px 50% no-repeat;
-    background-size: 30px;
-}
-
 .select-cars:hover {
     color: #fff;
     cursor: pointer;
@@ -206,16 +199,16 @@ h1, .top-menu li {
 }
 
 /* add a hotel, airplane and cars background icon to the 3 tabs */
+.select-flights {
+    background: #FF9955 url(../img/flights.png) 1px 50% no-repeat;
+    background-size: 30px;
+    width: 100%;
+    color: #fff;
+}
+
 .select-hotels {
     background: #fff url(../img/hotels.png) 1px 50% no-repeat;
     background-size: 20px;
-    width: 100%;
-    color: #FF9955;
-}
-
-.select-flights {
-    background: #fff url(../img/flights.png) 1px 50% no-repeat;
-    background-size: 30px;
     width: 100%;
     color: #FF9955;
 }
