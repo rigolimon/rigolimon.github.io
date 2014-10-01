@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Travel Website</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<
+<div class="wrapper">
+		<nav class="clearfix">
+			<div class="container">
+				<!-- travel destinations -->
+				<h1><span class="t">T</span>ravel <span class="p">D</span>estinations</h1>
+					<ul class="top-menu">
+						<li class="flights"><a href="#">Flights</a></li>
+						<li class="hotels"><a href="#">Hotels</a></li>
+						<li class="cars"><a href="#">Cars</a></li>
+							<li class="tours"><a href="#">Tours <span class="arrow">&nabla;</span></a>
+								<!-- drop down menu for tours -->
+								<ul class="drop-down">
+									<li><a href="#">North America</a></li>
+									<li><a href="#">South America</a></li>
+									<li><a href="#">Africa</a></li>
+									<li><a href="#">Asia</a></li>
+									<li><a href="#">Europe</a></li>
+								</ul>
+							</li>
+						<li class="hot-deals"><a href="#">Hot Deals</a></li>
+						<li class="contact"><a href="#">Contact</a></li>
+					</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- main section -->
+	<section class='main-section clearfix'>
+		<div class="container clearfix">
+			<div class="travel-select clearfix">
+				<ul>
+					<li><span class="select-flights">FLIGHTS</span></li>
+					<li><span class="select-hotels">HOTELS</span></li>
+					<li><span class="select-cars">CARS</span></li>
+				</ul>
+				<!-- add a form to travel selections -->
+				<form action="">
+					<div class="cruise-booking clearfix">
+						<div class="leaving going">
+							<label>Leaving From <span class="star">*</span></label>
+							<input type="text" placeholder="leaving from...">
+						</div>
+						<div class="departing arriving">
+							<label>Departing On <span class="star">*</span></label>
+							<input type="text" class="calendar" placeholder="departing on...">
+						</div>
+						<div class="leaving going">
+							<label>Going To <span class="star">*</span></label>
+							<input type="text" placeholder="going to...">
+						</div>
+						<div class="departing arriving">
+							<label>Arriving On <span class="star">*</span></label>
+							<input type="text" class="calendar" placeholder="arriving on...">
+						</div>
+						<div class="select-choices">
+							<div class="adults">
+								<label>Adults <span class="star">*</span></label>
+								<select name="adults">
+									<option value="00">00</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+								</select>
+							</div>
+							<div class="children">
+								<label>Children <span class="star">*</span></label>
+								<select name="children">
+									<option value="00">00</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+								</select>
+							</div>
+							<div class="senior">
+								<label>Senior <span class="star">*</span></label>
+								<select name="senior">
+									<option value="00">00</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+								</select>
+							</div>
+						</div>
+						<!-- search button -->
+						<button class="search" type="submit">SEARCH</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- most popular tours section -->
+	<section class="popularTours">
+		<div class="container">
+			<div class="title">
+				<h2>MOST POPULAR <span>DESTINATIONS</span></h2>
+			</div>
+			<div class="mostPopular">
+				<div class="egypt"><a href="#"><img src="img/egypt_opt.jpg" alt="egypt"></a><p>EGYPT</p><div class="priceTag">$560</div></div>
+				<div class="paris"><a href="#"><img src="img/paris_opt.jpg" alt="paris"></a><p>PARIS</p><div class="priceTag">$480</div></div>
+				<div class="cancun"><a href="#"><img src="img/cancun_opt.jpg" alt="cancun"></a><p>CANCUN</p><div class="priceTag">$399</div></div>
+				<div class="thailand"><a href="#"><img src="img/thailand_opt.jpg" alt="thailand"></a><p>THAILAND</p><div class="priceTag">$699</div></div>
+				<div class="australia"><a href="#"><img src="img/australia_opt.jpg" alt="australia"></a><p>AUSTRALIA</p><div class="priceTag">$650</div></div>
+				<div class="barcelona"><a href="#"><img src="img/barcelona_opt.jpg" alt="barcelona"></a><p>BARCELONA</p><div class="priceTag">$499</div></div>
+				<div class="london"><a href="#"><img src="img/london_opt.jpg" alt="london"></a><p>LONDON</p><div class="priceTag">$420</div></div>
+				<div class="miami"><a href="#"><img src="img/miami_opt.jpg" alt="miami"></a><p>MIAMI</p><div class="priceTag">$300</div></div>
+				<div class="brazil"><a href="#"><img src="img/brazil_opt.jpg" alt="brazil"></a><p>BRAZIL</p><div class="priceTag">$599</div></div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Media</a></li>
+				<li>2014. Designed by Rigo</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
