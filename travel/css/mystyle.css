@@ -78,8 +78,6 @@ nav .top-menu {
     padding: 10px 15px;
     font-family: 'Roboto', sans-serif;
     -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -91,6 +89,11 @@ nav .top-menu {
 /* Travel Destinations */
 h1 {
     font-family: 'Montserrat', sans-serif;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 h1, .top-menu li {
@@ -233,7 +236,7 @@ h1, .top-menu li {
     padding: 10px;
 }
 
-/* small container containing labels, inputs and selections */
+/* contains labels, inputs and selections */
 .leaving, .going, .select-choices {
     width: 55%;
     float: left;
@@ -264,7 +267,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    border: 2px solid #FF9955;
+    border: 1px solid #FF9955;
 }
 
 /* selection choices for adults, children and seniors */
@@ -308,7 +311,7 @@ select {
     margin: 40px 10px 0 0;
     border-radius: 5px;
     color: #fff;
-    box-shadow: 0 1px 8px black;
+    box-shadow: 0 1px 8px #000000;
     font-weight: bold;
 }
 
@@ -398,16 +401,16 @@ h2 span {
     -webkit-transition: all 0.5s ease;
 }
 
-.mostPopular div:hover > .priceTag {
-    width: 33%;
-    font-size: 1.5em;
+.mostPopular div:hover > .priceTag{
+    width:38%;
+    font-size:2em;
 }
 
 
-
+/* footer */
 footer {
     width: 100%;
-    box-shadow: 0 -1px 8px black;
+    box-shadow: 0 -1px 8px #000000;
     padding: 20px 0;
 }
 
@@ -422,18 +425,20 @@ footer ul li a {
     color: #1D82E5;
     display: block;
     padding: 0 15px;
-    border-right: 1px solid black;
-}
-
-footer ul li a:nth-child(4) {
-    border: none;
+    border-right: 1px solid #000000;
 }
 
 footer ul li a:hover  {
     text-decoration: underline;
 }
 
+/* remove right border on media link */
+footer ul li:nth-child(4) a {
+    border: none;
+}
+
+/* push the last list item to the right */
 footer ul li:last-child {
-    margin-left: 500px;
+    margin-left: 540px;
     color: #A9A9A9;
 }
