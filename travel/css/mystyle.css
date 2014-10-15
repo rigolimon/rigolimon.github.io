@@ -53,7 +53,7 @@ nav {
     z-index: 100;
     background: url(../img/travels.jpg) no-repeat;
     background-size: 100% 100%;
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -97,7 +97,7 @@ h1 a {
 /* travel select box which contains all the tabs, labels, inputs, button and selections */
 .travel-select {
     width: 95%;
-    margin: 15px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 
 .travel-select ul {
@@ -173,7 +173,7 @@ h1 a {
 
 label {
     display: block;
-    font-size: 100%;
+    font-size: 90%;
     margin-bottom: 5px;
     text-indent: 10px;
     color: #2f2f2f;
@@ -200,7 +200,7 @@ input[type="text"]:focus {
 .select-choices > div {
     vertical-align: top;
     display: inline-block;
-    margin: 2px;
+    width: 32%;
 }
 
 select {
