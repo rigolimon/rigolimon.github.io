@@ -1,3 +1,5 @@
+/* Responsive for mobile phones */
+
     /* apply a natural box layout model to all elements */
 *, *:before, *:after {
  -moz-box-sizing: border-box; /* Mozilla Firefox */
@@ -321,11 +323,24 @@ h2 span {
     -webkit-transition: all 0.5s ease;
 }
 
-.mostPopular div:hover > .priceTag ---{
+.mostPopular div:hover > .priceTag {
     width: 38%;
     font-size: 150%;
 }
 
+/* see more button */
+.seeMore {
+    display: block;
+    background: #FF9955;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 1px 8px #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
 /* footer */
 footer {
@@ -366,835 +381,104 @@ footer ul li:last-child {
 
 
 
+/* Landscape mode for mobile phones and small tablets */
+@media (min-width: 470px) {
+
+    /* travel select box which contains all the tabs, labels, inputs, button and selections */
+    .travel-select { width: 95%; margin: 90px auto 0 auto; }
+    /* hamburger menu only shown for mobile devices */
+    .menu { width: 17%; float: left; border-right: 3px solid white; margin-top: 10px; cursor: pointer; }
+    /* Travel Destinations */
+    h1 { font-family: 'Montserrat', sans-serif; float: right; margin-right: 30px; }
+    h1 a { text-decoration: none; color: #fff; display: block; font-size: 120%; }
+    /* add a hotel, airplane and cars background icon to the 3 tabs */
+    .select-flights { background-size: 30%; }
+    .select-hotels { background-size: 20%; }
+    /* change background/text color on hover */
+    .select-hotels:hover { background-size: 20%; }
+    .select-cars { background-size: 20%; }
+    .select-cars:hover { background-size: 20%; }
+    .travel-select ul li { font-size: 100%; }
+    input[type="text"] { padding: 10px; }
+    /* calendar icon for departing and arriving input section */
+    .calendar { background: url(../img/calendar.png) 97% 50% no-repeat; background-size: 6%; }
+    /* push the last list item to the right */
+    footer ul li:last-child { color: #A9A9A9; display: block; }
+
+}
 
 
-
-/*RESPONSIVE*/
-
-
-/*TABLET*/
-
-
+/* RESPONSIVE FOR TABLETS */
 @media (min-width: 768px) {
 
- /* apply a natural box layout model to all elements */
-*, *:before, *:after {
- -moz-box-sizing: border-box; /* Mozilla Firefox */
-    -o-box-sizing: border-box; /* Opera */
-        -webkit-box-sizing: border-box; /* Chrome and Safari */
-            -ms-webkit-box-sizing: border-box; /* Internet Explorer */
-                box-sizing: border-box;
+    /* hamburger menu only shown for mobile devices */
+    .menu { width: 15%; float: left; border-right: 3px solid white; margin-top: 13px; }
+    /* Travel Destinations */
+    h1 { margin-right: 40px; }
+    h1 a { font-size: 160%; }
+    /* travel select box which contains all the tabs, labels, inputs, button and selections */
+    .travel-select { width: 95%; margin: 105px auto 0 auto; }
+    .travel-select ul li { font-size: 100%; }
+    /* add a hotel, airplane and cars background icon to the 3 tabs */
+    .select-flights { background-size: 22%; }
+    .select-hotels { background-size: 15%; }
+    /* change background/text color on hover */
+    .select-hotels:hover { background-size: 15%; }
+    .select-cars:hover { background-size: 15%; }
+    .select-cars { background-size: 15%; }
+    input[type="text"] { padding: 10px; }
+    /* selection choices for adults, children and seniors */
+    .select-choices { margin: 25px auto; width: 95%; text-align: center; }
+    .select-choices > div { width: 32%; margin: 2px; }
+    select { border-radius: 10px; width: 100%; background: #fff; border: 1px solid #D4D4D4; padding: 7px; }
+    /* calendar icon for departing and arriving input section */
+    .calendar { background: url(../img/calendar.png) 97% 50% no-repeat; background-size: 5%; }
+    /* container for h2 tag */
+    .title { font-size: 100%; }
+    /* most popular destinations */
+    .mostPopular { width: 95%; margin: 0 auto; position: relative; text-align: center; }
+    .mostPopular > div, .seeMore { width:48%; display: inline-block; margin: 5px; }
+    /* see more button */
+    .seeMore { position: relative; top: -100px; background: #FF9955; padding: 13px; border: none; border-radius: 5px; color: #fff; box-shadow: 0 1px 8px #000000; font-weight: bold; }
+    /* travel location names on bottom of travel images */
+    .mostPopular > div > p { font-size: 120%; }
+    /* footer */
+    footer ul li a { padding: 0 35px; font-size: 120%; }
+    /* push the last list item to the right */
+    footer ul li:last-child { padding: 15px; font-size: 120%; }
+
 }
 
-/* apply clearfix to parent elements that have child floats */
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { 
-    display: inline-block; 
-}
-/* start commented backslash hack */
-* html .clearfix { 
-    height: 1%; 
-}
-.clearfix { 
-    display: block; 
-}
 
-/* remove margins, paddings and bullet points on all ULs */
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Sans-Serif, serif;
-    margin: 0;
-}
-
-/* wrapper */
-.wrapper {
-    width: 100%;
-    margin: 0;
-    position: relative;
-}
-
-/* navigation bar, h1 and nav links */
-nav {
-    color: #fff;
-    top: 0;
-    z-index: 100;
-    background: url(../img/travels.jpg) no-repeat;
-    background-size: 100% 100%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+/*SMALL DESKTOP and LANDSCAPE FOR TABLETS*/
+@media (min-width: 992px) {
 
 /* hamburger menu only shown for mobile devices */
-.menu {
-    width: 15%;
-    float: left;
-    border-right: 3px solid white;
-    padding: 10px 20px 10px 20px;
-    margin-top: 15px;
-}
-
-/* get rid of nav links */
-.top-menu li a {
-    display: none;
-}
-
+.menu { width: 13%; border-right: 3px solid white; }
 /* Travel Destinations */
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 200%;
-    float: right;
-    margin-right: 50px;
-}
-
-h1 a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-}
-
-
-/* travel paradise #FF9955 T and P */
-.t, .p {
-    color: #FF9955;
-    font-size: 150%;
-}
-
-
+h1 { font-family: 'Montserrat', sans-serif; float: right; margin-right: 40px; }
+h1 a { text-decoration: none; color: #fff; display: block; font-size: 200%; }
 /* travel select box which contains all the tabs, labels, inputs, button and selections */
-.travel-select {
-    width: 95%;
-    margin: 15px auto 0 auto;
-}
-
-.travel-select ul {
-    text-align: center;
-}
-
-.travel-select ul li {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    padding: 0;
-    font-size: 90%;
-    font-weight: bold;
-}
-
-/* flights, hotels, and cars tabs */
-.select-flights, .select-hotels, .select-cars {
-    padding: 17px 25px;
-    display: block;
-    width: 100%;
-    border-radius: 6px 6px 0 0;
-    box-shadow: 1px -1px 15px #808080, -1px 0 15px #808080;
-    color: #FF9955;
-}
-/* change background/text color on hover */
-.select-hotels:hover {
-    color: #fff;
-    cursor: pointer;
-    background: #FF9955 url(../img/hotels.png) 1px 50% no-repeat;
-    background-size: 20px;
-}
-
-.select-cars:hover {
-    color: #fff;
-    cursor: pointer;
-    background: #FF9955 url(../img/cars.png) 3px 50% no-repeat;
-    background-size: 20px;
-}
-
+.travel-select { width: 95%; margin: 120px auto 0 auto }
 /* add a hotel, airplane and cars background icon to the 3 tabs */
-.select-flights {
-    background: #FF9955 url(../img/flights.png) 0 50% no-repeat;
-    background-size: 30px;
-    width: 100%;
-    color: #fff;
-}
-
-.select-hotels {
-    background: #fff url(../img/hotels.png) 1px 50% no-repeat;
-    background-size: 20px;
-    width: 100%;
-    color: #FF9955;
-    padding-left: 20px;
-}
-
-.select-cars {
-    background: #fff url(../img/cars.png) 3px 50% no-repeat;
-    background-size: 20px;
-    width: 100%;
-    color: #FF9955;
-}
-
-/* select destinations: arriving, departing, leaving from, going to */
-.cruise-booking {
-    background: #fff;
-    opacity: 0.97;
-    width: 95%;
-    margin: 0 auto;
-    padding: 5px 5px 20px;
-    box-shadow: 5px 5px 15px #181818, -5px 5px 15px #181818;
-}
-
-
-label {
-    display: block;
-    font-size: 100%;
-    margin-bottom: 5px;
-    text-indent: 10px;
-    color: #2f2f2f;
-}
-
-input[type="text"] {
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #D4D4D4;
-    padding: 7px;
-}
-
-input[type="text"]:focus {
-    border: 1px solid #FF9955;
-}
-
-/* selection choices for adults, children and seniors */
-.select-choices {
-    margin: 25px auto;
-    width: 95%;
-    text-align: center;
-}
-
-.select-choices > div {
-    vertical-align: top;
-    display: inline-block;
-    margin: 5px;
-}
-
-select {
-    border-radius: 10px;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #D4D4D4;
-    padding: 7px;
-}
-
-/* calendar icon for departing and arriving input section */
-.calendar {
-    background: url(../img/calendar.png) 95% 50% no-repeat;
-    background-size: 10%;
-}
-
-/* orange asterik */
-.star {
-    color: #FF9955;
-    vertical-align: baseline;
-    font-size: 150%;
-}
-
-
-/* search button for travel selections*/
-.search {
-    background: #FF9955;
-    width: 90%;
-    padding: 15px 0;
-    border: none;
-    margin: 0 auto;
-    display: block;
-    border-radius: 5px;
-    color: #fff;
-    box-shadow: 0 1px 8px #000000;
-    font-weight: bold;
-}
-
-/* MOST POPULAR TOURS SECTION */
-.popularTours {
-    width: 95%;
-    background: url(../img/lightbackground.png);
-    margin: 0 auto;
-}
-
-/* container for h2 tag */
-.title {
-    width: 100%;
-    border-bottom: 1px solid #FF9955;
-    padding-top: 30px;
-    font-size: 80%;
-    margin-bottom: 30px;
-}
-
-h2 span {
-    color: #FF9955;
-    font-weight: bold;
-}
-
-/* most popular destinations */
-.mostPopular {
-    width: 95%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.mostPopular > div {
-    width: 100%;
-    position: relative;
-    margin-bottom: 15px;
-}
-
-/* travel images widths and heights */
-.mostPopular div > img {
-    width: 100%;
-    height: 200px;
-    cursor: pointer;
-}
-
-/* travel location names on bottom of travel images */
-.mostPopular > div > p {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    text-align: left;
-    padding: 5px;
-    color: #fff;
-    font-size: 100%;
-    background-image: -ms-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* IE10 Consumer Preview */ 
-    background-image: -moz-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* Mozilla Firefox */ 
-    background-image: -o-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* Opera */ 
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF9955), color-stop(1, #D9AF66));/* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* Webkit (Chrome 11+) */ 
-    background-image: linear-gradient(to top, #FF9955 0%, #D9AF66 100%); /* W3C Markup, IE10 Release Preview */ 
-}
-
-/* price tag for travel locations */
-.priceTag {
-    width: 25%;
-    padding: 15px;
-    box-shadow: 1px 10px 35px rgb(0, 0, 0);
-    border-radius: 5px 0 0 5px;
-    text-align: left;
-    position: absolute;
-    right: -5px;
-    top: 40px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 100%;
-    background-image: -ms-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%);  /* IE10 Consumer Preview */ 
-    background-image: -moz-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%); /* Mozilla Firefox */ 
-    background-image: -o-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%); /* Opera */ 
-    background-image: -webkit-gradient(radial, left top, 0, left top, 993, color-stop(0, #206108), color-stop(1, #246B0B)); /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%); /* Webkit (Chrome 11+) */  
-    background-image: radial-gradient(circle farthest-corner at left top, #206108 0%, #246B0B 100%); /* W3C Markup, IE10 Release Preview */
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-}
-
-.mostPopular div:hover > .priceTag ---{
-    width: 38%;
-    font-size: 150%;
-}
-
-
-/* footer */
-footer {
-    width: 100%;
-    box-shadow: 0 -1px 8px #000000;
-    text-align: center;
-    padding: 15px 0;
-}
-
-footer ul li {
-    display: inline-block;
-    vertical-align: top;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: #1D82E5;
-    display: block;
-    padding: 0 10px;
-    border-right: 1px solid #000000;
-    font-size: 100%;
-}
-
-footer ul li a:hover  {
-    text-decoration: underline;
-}
-
-/* remove right border on media link */
-footer ul li:nth-child(4) a {
-    border: none;
-}
-
-/* push the last list item to the right */
-footer ul li:last-child {
-    color: #A9A9A9;
-    padding: 5px;
-}
-
-}
-
-/*SMALL DESKTOP*/
-
-@media (min-width:992px) {
-
-/* apply a natural box layout model to all elements */
-*, *:before, *:after {
- -moz-box-sizing: border-box; /* Mozilla Firefox */
-    -o-box-sizing: border-box; /* Opera */
-        -webkit-box-sizing: border-box; /* Chrome and Safari */
-            -ms-webkit-box-sizing: border-box; /* Internet Explorer */
-                box-sizing: border-box;
-}
-
-/* apply clearfix to parent elements that have child floats */
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { 
-    display: inline-block; 
-}
-/* start commented backslash hack */
-* html .clearfix { 
-    height: 1%; 
-}
-.clearfix { 
-    display: block; 
-}
-
-/* remove margins, paddings and bullet points on all ULs */
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Sans-Serif, serif;
-    margin: 0;
-}
-
-/* wrapper */
-.wrapper {
-    width: 100%;
-    margin: 0;
-    position: relative;
-}
-/* container width for all sections*/
-.container {
-    width: 85%;
-    margin: 0 auto;
-    position: relative;
-}
-
-/* navigation bar, h1 and nav links */
-nav {
-    width: 100%;
-    background: #1D82E6;
-    border-bottom: 4px solid #095BAC;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
-
-/* only shown for mobile devices */
-.menu {
-    display: none;
-}
-
-nav .top-menu {
-    margin-top: 30px;
-    list-style: none;
-    float: right;
-    padding: 0;
-}
-
-.top-menu li a {
-    color: #fff;
-    margin-bottom: 10px;
-    display: block;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-family: 'Roboto', sans-serif;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-/* smooth transition on nav links on hover */
-.top-menu li a:hover {
-    color: #FF9955;
-}
-
-/* Travel Destinations */
-h1 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-h1, .top-menu li {
-    float: left;
-}
-
-/* travel paradise #FF9955 T and P */
-.t, .p {
-    color: #FF9955;
-}
-
-/* hide drop down menu */
-.top-menu ul {
-    position: absolute;
-    left: -9999em;
-}
-
-/* show drop down menu when Tours link gets hovered on */
-.top-menu li:hover ul {
-    left: auto;
-    padding: 0;
-    list-style: none;
-}
-
-/* Tours link orange arrow */
-.arrow {
-    font-weight: bold;
-    color: #FF9955;
-}
-
-.top-menu li ul li {
-    float: none;
-}
-
-.top-menu ul li a {
-    text-decoration: none;
-    display: block;
-    color: #fff;
-    background: #1D82E6;
-    margin: 0;
-}
-
-/* bottom border for drop down Tours menu */
-.top-menu ul li a:last-child {
-    border-bottom: 1px solid #095BAC;
-}
-
-.top-menu ul li:last-child {
-    border-bottom: 4px solid #095BAC;
-}
-
-/* beach and boat background */
-.main-section {
-    background: url(../img/travels.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-}
-
-/* travel select box which contains all the tabs, labels, inputs, button and selections */
-.travel-select {
-    width: 50%;
-    float: right;
-    margin-top: 180px;
-}
-
-.travel-select ul {
-    text-align: center;
-}
-
-.travel-select ul li {
-    display: inline-block;
-    vertical-align: top;
-    width: 25%;
-    margin-left: 5px;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-/* hotels, flights and cars tabs */
-.select-flights, .select-hotels, .select-cars {
-    padding: 14px 25px;
-    display: block;
-    width: 100%;
-    border-radius: 6px 6px 0 0;
-    box-shadow: 1px -1px 8px #272724, -1px 0 8px #272724;
-    color: #FF9955;
-}
+.select-flights { background-size: 22%; }
+.select-hotels { background-size: 15%; }
 /* change background/text color on hover */
-.select-hotels:hover {
-    color: #fff;
-    cursor: pointer;
-    background: #FF9955 url(../img/hotels.png) 1px 50% no-repeat;
-    background-size: 20px;
-}
-
-.select-cars:hover {
-    color: #fff;
-    cursor: pointer;
-    background: #FF9955 url(../img/cars.png) 6px 50% no-repeat;
-    background-size: 20px;
-}
-
-/* add a hotel, airplane and cars background icon to the 3 tabs */
-.select-flights {
-    background: #FF9955 url(../img/flights.png) 1px 50% no-repeat;
-    background-size: 30px;
-    width: 100%;
-    color: #fff;
-}
-
-.select-hotels {
-    background: #fff url(../img/hotels.png) 1px 50% no-repeat;
-    background-size: 20px;
-    width: 100%;
-    color: #FF9955;
-}
-
-.select-cars {
-    background: #fff url(../img/cars.png) 6px 50% no-repeat;
-    background-size: 20px;
-    width: 100%;
-    color: #FF9955;
-}
-
-/* select destinations: arriving, departing, leaving from, going to */
-.cruise-booking {
-    background: #fff;
-    opacity: 0.97;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-}
-
-/* contains labels, inputs and selections */
-.leaving, .going, .select-choices {
-    width: 55%;
-    float: left;
-    margin: 6px;
-    padding: 0 0 5px 0;
-}
-
-.departing, .arriving {
-    width: 40%;
-    float: left;
-    margin: 6px;
-    padding: 0 0 5px 0;
-}
-
-label {
-    display: block;
-    font-size: 1em;
-    margin-bottom: 5px;
-    text-indent: 10px;
-    color: #2f2f2f;
-}
-
-input[type="text"] {
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #D4D4D4;
-    padding: 7px;
-}
-
-input[type="text"]:focus {
-    border: 1px solid #FF9955;
-}
-
+.select-hotels:hover { background-size: 15%; }
+.select-cars { background-size: 15%; }
+.select-cars:hover { background-size: 15%; }
+input[type="text"] { padding: 15px; }
 /* selection choices for adults, children and seniors */
-.select-choices > div {
-    display: inline-block;
-    width: 30%;
-    margin-left: 6px;
-    font-size: 0.9em;
-    vertical-align: top;
-    margin-bottom: 30px;
-}
-
-select {
-    border-radius: 10px;
-    width: 90%;
-    background: #fff;
-    border: 1px solid #D4D4D4;
-    padding: 7px;
-}
-
+.select-choices { margin: 25px auto; width: 95%; text-align: center; }
+.select-choices > div { width: 32%; margin: 2px; }
+select { border-radius: 10px; width: 100%; background: #fff; border: 1px solid #D4D4D4; padding: 7px; }
 /* calendar icon for departing and arriving input section */
-.calendar {
-    background: url(../img/calendar.png) 95% 50% no-repeat;
-    background-size: 10%;
-}
-
-/* orange asterik */
-.star {
-    color: #FF9955;
-    vertical-align: baseline;
-    font-size: 1.5em;
-}
-
-
-/* search button for travel selections*/
-.search {
-    float: right;
-    background: #FF9955;
-    padding: 13px 35px;
-    border: none;
-    margin: 40px 10px 0 0;
-    border-radius: 5px;
-    color: #fff;
-    box-shadow: 0 1px 8px #000000;
-    font-weight: bold;
-}
-
-/* MOST POPULAR TOURS SECTION */
-.popularTours {
-    width: 100%;
-    background: url(../img/lightbackground.png);
-}
-
-/* container for h2 tag */
-.title {
-    width: 100%;
-    border-bottom: 1px solid #FF9955;
-    padding-top: 70px;
-    font-size: 80%;
-}
-
-h2 span {
-    color: #FF9955;
-    font-weight: bold;
-}
-
-/* most popular destinations */
-.mostPopular {
-    width: 100%;
-    text-align: center;
-    margin-top: 70px;
-    position: relative;
-    padding-bottom: 100px;
+.calendar { background: url(../img/calendar.png) 97% 50% no-repeat; background-size: 5%; }
 
 }
 
-.mostPopular > div {
-    display: inline-block;
-    vertical-align: top;
-    width: auto;
-    background: gray;
-    margin: 10px;
-    position: relative;
-    height: auto;
-}
 
-/* travel images widths and heights */
-.mostPopular div > a > img {
-    width: 300px;
-    height: 200px;
-}
-
-/* travel location names on bottom of travel images */
-.mostPopular > div > p {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    text-align: left;
-    padding: 10px 0 10px 38px;
-    color: #fff;
-    font-size: 1.4em;
-    background-image: -ms-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* IE10 Consumer Preview */ 
-    background-image: -moz-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* Mozilla Firefox */ 
-    background-image: -o-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* Opera */ 
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF9955), color-stop(1, #D9AF66));/* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-linear-gradient(bottom, #FF9955 0%, #D9AF66 100%); /* Webkit (Chrome 11+) */ 
-    background-image: linear-gradient(to top, #FF9955 0%, #D9AF66 100%); /* W3C Markup, IE10 Release Preview */ 
-}
-
-/* price tag for travel locations */
-.priceTag {
-    width: 25%;
-    padding: 15px;
-    box-shadow: 1px 10px 35px rgb(0, 0, 0);
-    border-radius: 5px 0 0 5px;
-    text-align: left;
-    position: absolute;
-    right: -5px;
-    top: 40px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.3em;
-    background-image: -ms-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%);  /* IE10 Consumer Preview */ 
-    background-image: -moz-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%); /* Mozilla Firefox */ 
-    background-image: -o-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%); /* Opera */ 
-    background-image: -webkit-gradient(radial, left top, 0, left top, 993, color-stop(0, #206108), color-stop(1, #246B0B)); /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-radial-gradient(left top, circle farthest-corner, #206108 0%, #246B0B 100%); /* Webkit (Chrome 11+) */  
-    background-image: radial-gradient(circle farthest-corner at left top, #206108 0%, #246B0B 100%); /* W3C Markup, IE10 Release Preview */
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-}
-
-.mostPopular div:hover > .priceTag{
-    width:38%;
-    font-size:2em;
-}
-
-
-/* footer */
-footer {
-    width: 100%;
-    box-shadow: 0 -1px 8px #000000;
-    padding: 20px 0;
-}
-
-footer ul li {
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: #1D82E5;
-    display: block;
-    padding: 0 15px;
-    border-right: 1px solid #000000;
-}
-
-footer ul li a:hover  {
-    text-decoration: underline;
-}
-
-/* remove right border on media link */
-footer ul li:nth-child(4) a {
-    border: none;
-}
-
-/* push the last list item to the right */
-footer ul li:last-child {
-    margin-left: 540px;
-    color: #A9A9A9;
-}
-
-}
-
-/*LARGE DESKTOP*/
+/*MEDIUM SIZED DESKTOP*/
 
 @media (min-width: 1200px) {
 
@@ -1215,14 +499,17 @@ footer ul li:last-child {
      content: " ";
      clear: both;
      height: 0;
-     }
+}
+
 .clearfix { 
     display: inline-block; 
 }
+
 /* start commented backslash hack */
 * html .clearfix { 
     height: 1%; 
 }
+
 .clearfix { 
     display: block; 
 }
@@ -1249,7 +536,6 @@ body {
 .container {
     width: 85%;
     margin: 0 auto;
-    position: relative;
 }
 
 /* navigation bar, h1 and nav links */
@@ -1269,7 +555,7 @@ nav {
 }
 
 nav .top-menu {
-    margin-top: 30px;
+    margin-top: 45px;
     list-style: none;
     float: right;
     padding: 0;
@@ -1538,7 +824,6 @@ h2 span {
     text-align: center;
     margin-top: 70px;
     position: relative;
-    padding-bottom: 100px;
 
 }
 
@@ -1549,7 +834,6 @@ h2 span {
     background: gray;
     margin: 10px;
     position: relative;
-    height: auto;
 }
 
 /* travel images widths and heights */
@@ -1599,21 +883,29 @@ h2 span {
     -webkit-transition: all 0.5s ease;
 }
 
-.mostPopular div:hover > .priceTag{
+.mostPopular div:hover > .priceTag {
     width:38%;
     font-size:2em;
 }
 
+/* see more button */
+.seeMore {
+    clear: both;
+    display: block;
+    margin: 120px auto 0 auto;
+    width: 30%;
+}
+
 
 /* footer */
-footer {
+footer { 
     width: 100%;
     box-shadow: 0 -1px 8px #000000;
     padding: 20px 0;
 }
 
 footer ul li {
-    display: inline-block;
+    float: left;
     vertical-align: top;
     padding: 10px;
 }
@@ -1622,23 +914,24 @@ footer ul li a {
     text-decoration: none;
     color: #1D82E5;
     display: block;
-    padding: 0 15px;
     border-right: 1px solid #000000;
 }
 
-footer ul li a:hover  {
+footer ul li a:hover {
     text-decoration: underline;
 }
 
 /* remove right border on media link */
 footer ul li:nth-child(4) a {
     border: none;
+    margin-right: 50px;
 }
 
 /* push the last list item to the right */
 footer ul li:last-child {
-    margin-left: 540px;
+    display: inline-block;
     color: #A9A9A9;
+    float: right;
 }
 
 } 
