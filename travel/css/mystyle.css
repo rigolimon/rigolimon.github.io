@@ -66,7 +66,7 @@ nav {
     float: left;
     border-right: 3px solid white;
     padding: 10px 20px 10px 20px;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 /* get rid of nav links */
@@ -718,6 +718,7 @@ h1, .top-menu li {
     opacity: 0.97;
     width: 100%;
     margin: 0;
+    padding: 40px 0;
 }
 
 /* contains labels, inputs and selections */
