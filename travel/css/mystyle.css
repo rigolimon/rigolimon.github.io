@@ -117,7 +117,7 @@ h1 a {
 
 /* flights, hotels, and cars tabs */
 .select-flights, .select-hotels, .select-cars {
-    padding: 17px 25px;
+    padding: 17px 24px;
     display: block;
     width: 100%;
     border-radius: 6px 6px 0 0;
@@ -156,7 +156,7 @@ h1 a {
 }
 
 .select-cars {
-    background: #fff url(../img/cars.png) 3px 50% no-repeat;
+    background: #fff url(../img/cars.png) 8px 50% no-repeat;
     background-size: 20px;
     width: 100%;
     color: #FF9955;
@@ -390,7 +390,7 @@ footer ul li:last-child {
     .menu { width: 17%; float: left; border-right: 3px solid white; margin-top: 10px; cursor: pointer; }
     /* Travel Destinations */
     h1 { font-family: 'Montserrat', sans-serif; float: right; margin-right: 30px; }
-    h1 a { text-decoration: none; color: #fff; display: block; font-size: 120%; }
+    h1 a { text-decoration: none; color: #fff; display: block; font-size: 150%; }
     /* add a hotel, airplane and cars background icon to the 3 tabs */
     .select-flights { background-size: 30%; }
     .select-hotels { background-size: 20%; }
