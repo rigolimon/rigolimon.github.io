@@ -135,7 +135,7 @@ h1 a {
 .select-cars:hover {
     color: #fff;
     cursor: pointer;
-    background: #FF9955 url(../img/cars.png) 9px 50% no-repeat;
+    background: #FF9955 url(../img/cars.png) 3px 50% no-repeat;
     background-size: 20px;
 }
 
@@ -156,7 +156,7 @@ h1 a {
 }
 
 .select-cars {
-    background: #fff url(../img/cars.png) 8px 50% no-repeat;
+    background: #fff url(../img/cars.png) 3px 50% no-repeat;
     background-size: 20px;
     width: 100%;
     color: #FF9955;
