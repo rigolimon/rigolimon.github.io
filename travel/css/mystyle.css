@@ -62,11 +62,11 @@ nav {
 
 /* hamburger menu only shown for mobile devices */
 .menu {
-    width: 22%;
+    width: 20%;
     float: left;
     border-right: 3px solid white;
     padding: 10px 20px;
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 /* get rid of nav links */
@@ -385,7 +385,7 @@ footer ul li:last-child {
     /* travel select box which contains all the tabs, labels, inputs, button and selections */
     .travel-select { width: 95%; margin: 90px auto 0 auto; }
     /* hamburger menu only shown for mobile devices */
-    .menu { width: 17%; float: left; border-right: 3px solid white; margin-top: 10px; cursor: pointer; }
+    .menu { width: 17%; float: left; border-right: 3px solid white; margin-top: 15px; cursor: pointer; }
     /* Travel Destinations */
     h1 { font-family: 'Montserrat', sans-serif; float: right; margin-right: 30px; }
     h1 a { text-decoration: none; color: #fff; display: block; font-size: 150%; }
