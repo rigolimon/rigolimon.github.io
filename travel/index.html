@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Travel Website</title>
+  <title>Travel Destinations</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-  <meta charset="utf-8">
   <link href='http://fonts.googleapis.com/css?family=Roboto:300italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
@@ -36,110 +35,112 @@
 					</ul>
 			</div>
 		</nav>
-	</div>
 
-	<!-- main section -->
-	<section class='main-section clearfix'>
-		<div class="container clearfix">
-			<div class="travel-select clearfix">
+		<!-- main section -->
+		<section class='main-section clearfix'>
+			<div class="container clearfix">
+				<div class="travel-select clearfix">
+					<ul>
+						<li><span class="select-flights">FLIGHTS</span></li>
+						<li><span class="select-hotels">HOTELS</span></li>
+						<li><span class="select-cars">CARS</span></li>
+					</ul>
+					<!-- add a form to travel selections -->
+					<form>
+						<div class="cruise-booking clearfix">
+							<div class="leaving going">
+								<label>Leaving From <span class="star">*</span></label>
+								<input type="text" placeholder="leaving from...">
+							</div>
+							<div class="departing arriving">
+								<label>Departing On <span class="star">*</span></label>
+								<input type="text" class="calendar" placeholder="departing on...">
+							</div>
+							<div class="leaving going">
+								<label>Going To <span class="star">*</span></label>
+								<input type="text" placeholder="going to...">
+							</div>
+							<div class="departing arriving">
+								<label>Arriving On <span class="star">*</span></label>
+								<input type="text" class="calendar" placeholder="arriving on...">
+							</div>
+							<div class="select-choices">
+								<div class="adults">
+									<label>Adults <span class="star">*</span></label>
+									<select name="adults">
+										<option value="00">00</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+									</select>
+								</div>
+								<div class="children">
+									<label>Children <span class="star">*</span></label>
+									<select name="children">
+										<option value="00">00</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+									</select>
+								</div>
+								<div class="senior">
+									<label>Senior <span class="star">*</span></label>
+									<select name="senior">
+										<option value="00">00</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+									</select>
+								</div>
+							</div>
+							<!-- search button -->
+							<button class="search" type="submit">SEARCH</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- most popular tours section -->
+		<section class="popularTours clearfix">
+			<div class="container">
+				<div class="title">
+					<h2>MOST POPULAR <span>DESTINATIONS</span></h2>
+				</div>
+				<div class="mostPopular">
+					<div class="egypt"><img src="img/egypt_opt.jpg" alt="egypt"><p>EGYPT</p><div class="priceTag">$560</div></div>
+					<div class="paris"><img src="img/paris_opt.jpg" alt="paris"><p>PARIS</p><div class="priceTag">$480</div></div>
+					<div class="cancun"><img src="img/cancun_opt.jpg" alt="cancun"><p>CANCUN</p><div class="priceTag">$399</div></div>
+					<div class="thailand"><img src="img/thailand_opt.jpg" alt="thailand"><p>THAILAND</p><div class="priceTag">$699</div></div>
+					<div class="australia"><img src="img/australia_opt.jpg" alt="australia"><p>AUSTRALIA</p><div class="priceTag">$650</div></div>
+					<div class="barcelona"><img src="img/barcelona_opt.jpg" alt="barcelona"><p>BARCELONA</p><div class="priceTag">$499</div></div>
+					<div class="london"><img src="img/london_opt.jpg" alt="london"><p>LONDON</p><div class="priceTag">$420</div></div>
+					<div class="miami"><img src="img/miami_opt.jpg" alt="miami"><p>MIAMI</p><div class="priceTag">$300</div></div>
+					<div class="brazil"><img src="img/brazil_opt.jpg" alt="brazil"><p>BRAZIL</p><div class="priceTag">$599</div></div>
+					<!-- see more button -->
+					<button class="seeMore">CLICK TO SEE MORE</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer section -->
+		<footer class="clearfix">
+			<div class="container">
 				<ul>
-					<li><span class="select-flights">FLIGHTS</span></li>
-					<li><span class="select-hotels">HOTELS</span></li>
-					<li><span class="select-cars">CARS</span></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Media</a></li>
+					<li>2014. Designed by Rigo</li>
 				</ul>
-				<!-- add a form to travel selections -->
-				<form>
-					<div class="cruise-booking clearfix">
-						<div class="leaving going">
-							<label>Leaving From <span class="star">*</span></label>
-							<input type="text" placeholder="leaving from...">
-						</div>
-						<div class="departing arriving">
-							<label>Departing On <span class="star">*</span></label>
-							<input type="text" class="calendar" placeholder="departing on...">
-						</div>
-						<div class="leaving going">
-							<label>Going To <span class="star">*</span></label>
-							<input type="text" placeholder="going to...">
-						</div>
-						<div class="departing arriving">
-							<label>Arriving On <span class="star">*</span></label>
-							<input type="text" class="calendar" placeholder="arriving on...">
-						</div>
-						<div class="select-choices">
-							<div class="adults">
-								<label>Adults <span class="star">*</span></label>
-								<select name="adults">
-									<option value="00">00</option>
-									<option value="01">01</option>
-									<option value="02">02</option>
-									<option value="03">03</option>
-									<option value="04">04</option>
-									<option value="05">05</option>
-								</select>
-							</div>
-							<div class="children">
-								<label>Children <span class="star">*</span></label>
-								<select name="children">
-									<option value="00">00</option>
-									<option value="01">01</option>
-									<option value="02">02</option>
-									<option value="03">03</option>
-									<option value="04">04</option>
-									<option value="05">05</option>
-								</select>
-							</div>
-							<div class="senior">
-								<label>Senior <span class="star">*</span></label>
-								<select name="senior">
-									<option value="00">00</option>
-									<option value="01">01</option>
-									<option value="02">02</option>
-									<option value="03">03</option>
-									<option value="04">04</option>
-									<option value="05">05</option>
-								</select>
-							</div>
-						</div>
-						<!-- search button -->
-						<button class="search" type="submit">SEARCH</button>
-					</div>
-				</form>
 			</div>
-		</div>
-	</section>
-	<!-- most popular tours section -->
-	<section class="popularTours clearfix">
-		<div class="container">
-			<div class="title">
-				<h2>MOST POPULAR <span>DESTINATIONS</span></h2>
-			</div>
-			<div class="mostPopular">
-				<div class="egypt"><img src="img/egypt_opt.jpg" alt="egypt"><p>EGYPT</p><div class="priceTag">$560</div></div>
-				<div class="paris"><img src="img/paris_opt.jpg" alt="paris"><p>PARIS</p><div class="priceTag">$480</div></div>
-				<div class="cancun"><img src="img/cancun_opt.jpg" alt="cancun"><p>CANCUN</p><div class="priceTag">$399</div></div>
-				<div class="thailand"><img src="img/thailand_opt.jpg" alt="thailand"><p>THAILAND</p><div class="priceTag">$699</div></div>
-				<div class="australia"><img src="img/australia_opt.jpg" alt="australia"><p>AUSTRALIA</p><div class="priceTag">$650</div></div>
-				<div class="barcelona"><img src="img/barcelona_opt.jpg" alt="barcelona"><p>BARCELONA</p><div class="priceTag">$499</div></div>
-				<div class="london"><img src="img/london_opt.jpg" alt="london"><p>LONDON</p><div class="priceTag">$420</div></div>
-				<div class="miami"><img src="img/miami_opt.jpg" alt="miami"><p>MIAMI</p><div class="priceTag">$300</div></div>
-				<div class="brazil"><img src="img/brazil_opt.jpg" alt="brazil"><p>BRAZIL</p><div class="priceTag">$599</div></div>
-				<button class="seeMore">CLICK TO SEE MORE</button>
-			</div>
-		</div>
-	</section>
-	<!-- footer section -->
-	<footer class="clearfix">
-		<div class="container">
-			<ul>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Service</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Media</a></li>
-				<li>2014. Designed by Rigo</li>
-			</ul>
-		</div>
-	</footer>
+		</footer>
 </div>
 </body>
 </html>

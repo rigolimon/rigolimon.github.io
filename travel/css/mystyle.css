@@ -379,7 +379,7 @@ footer ul li:last-child {
 
 
 
-/* Landscape mode for mobile phones and small tablets */
+/* Landscape for mobile phones and small tablets */
 @media (min-width: 470px) {
 
     /* travel select box which contains all the tabs, labels, inputs, button and selections */
