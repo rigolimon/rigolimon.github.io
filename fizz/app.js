@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 			for( var i = 1; i <= inputNum; i++){
 				if(i%3 === 0 && i%5 === 0) {
-					var newElement = $("<p>Finally a Fizz Buzz!</p>");
+					var newElement = $("<p>Fizz Buzz!</p>");
 					newElement.addClass("fizzbuzz");
 					$("body").append(newElement);
 				}
