@@ -1,4 +1,5 @@
-rigolimon.github.io
-===================
+---
 
-Startup Institute Blog Site(updated again)
+Personal website to add projects to
+
+---
