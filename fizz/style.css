@@ -22,10 +22,11 @@ h1 {
 }
 
 h2 {
-	margin: 0 auto;
+	text-align: center;
 	font-family: 'Lobster', cursive;
-	width: 30%;
-	background: green;
+	width: 100%;
+	margin-top: 90px;
+	font-size: 200%;
 }
 
 .anim {
@@ -41,24 +42,25 @@ h2 {
 
 @-webkit-keyframes glow {
   0%   { opacity: 0; }
-  100% { opacity: 1; font-size: 2.2em; }
+  100% { opacity: 1; font-size: 1.5em; }
 }
 @-moz-keyframes glow {
   0%   { opacity: 0; }
-  100% { opacity: 1; font-size: 2.2em;}
+  100% { opacity: 1; font-size: 1.5em;}
 }
 @-o-keyframes glow {
   0%   { opacity: 0; }
-  100% { opacity: 1; font-size: 2.2em;}
+  100% { opacity: 1; font-size: 1.5em;}
 }
 @keyframes glow {
   0%   { opacity: 0; }
-  100% { opacity: 1; font-size: 2.2em;}
+  100% { opacity: 1; font-size: 1.5em;}
 }
 
 .inputBox {
-	margin-top: 70px;
+	margin: 70px auto 0 auto;
 	text-align: center;
+	width: 80%;
 }
 
 #inputNumber, #inputBtn {
@@ -72,15 +74,169 @@ h2 {
 #inputNumber {
 	text-align: center;	
 	background-color: #FFC80D;	
-	height: 55px;
+	padding: 20px;
 	width: 40%;
 	color: #fff;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 #inputBtn {
-	height: 60px;
-	width: 10%;
+	width: 40%;
+	padding: 20px;
+	background-color: #FF6E0D;
+	transition: 0.5s all ease-in-out;
+	-webkit-transition: 0.5s all ease-in-out;
+}
+
+#inputBtn:hover {
+	cursor: pointer;
+	opacity: .6;
+	width: 38%;
+}
+
+p {
+	margin: 10px auto 0 auto;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px #000;
+	text-align: center;
+	letter-spacing: 5px;
+	font-family: 'Lobster', sans-serif;
+	font-weight: bold;
+	width: 250px;
+	font-size: 20px;
+	line-height: 10px;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.fizzbuzz {
+	background-color: #24CB40;
+	box-shadow: 0 0 200px green;
+	width: 50%;
+	cursor: pointer;
+	-webkit-animation: bingo 5s infinite; /* Safari 4+ */
+  -moz-animation:    bingo 5s infinite; /* Fx 5+ */
+  -o-animation:      bingo 5s infinite; /* Opera 12+ */
+  animation: 		bingo 5s infinite;
+}
+
+@-webkit-keyframes bingo {
+  0%   { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes bingo {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes bingo {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes bingo {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fizz {
+	background-color: #0E16A1;
+	width: 50%;
+}
+
+.buzz {
+	background-color: #EDBA0C;
+	width: 50%;
+}
+
+.default {
+	background-color: #7f8c8d;
+	width: 50%;
+}
+
+@media (min-width: 760px) {
+	body {
+	margin: 0;
+	width: 100%;
+	background: url('wood_pattern.png');
+	height: 100vh;
+}
+
+
+
+
+h1 {
+	background: url('dark.png');
+	line-height: 30px;
+	padding: 30px 0;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	word-spacing: 10px;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	width: 100%;
+	margin-top: 90px;
+	font-size: 200%;
+}
+
+.anim {
+	-webkit-animation: glow 5s infinite; /* Safari 4+ */
+  		-moz-animation:    glow 5s infinite; /* Fx 5+ */
+  			-o-animation:      glow 5s infinite; /* Opera 12+ */
+  				animation: 		glow 5s infinite;
+  	display: block;
+  	font-family: 'Lobster', cursive;
+  	letter-spacing: 5px;
+
+}
+
+@-webkit-keyframes glow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; font-size: 2.0em; }
+}
+@-moz-keyframes glow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; font-size: 2.0em;}
+}
+@-o-keyframes glow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; font-size: 2.0em;}
+}
+@keyframes glow {
+  0%   { opacity: 0; }
+  100% { opacity: 1; font-size: 2.0em;}
+}
+
+.inputBox {
+	margin: 70px auto 0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+#inputNumber, #inputBtn {
+	vertical-align: top;
+	margin: 0;
+	border: 2px solid #2d6d71;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+#inputNumber {
+	text-align: center;	
+	background-color: #FFC80D;	
+	padding: 20px;
+	width: 60%;
+	color: #fff;
+	font-size: 1em;
+}
+
+#inputBtn {
+	width: 20%;
+	padding: 20px;
 	background-color: #FF6E0D;
 	transition: 0.5s all ease-in-out;
 	-webkit-transition: 0.5s all ease-in-out;
@@ -148,4 +304,6 @@ p {
 .default {
 	background-color: #7f8c8d;
 	width: 50%;
+}
+
 }
