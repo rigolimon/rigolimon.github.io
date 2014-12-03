@@ -7,7 +7,7 @@ html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h
 	font: inherit;
 	text-decoration:none;
 	list-style:none;
-	
+	background: yellow;
 }
 
 a,a:active,a:hover {outline: none;}
